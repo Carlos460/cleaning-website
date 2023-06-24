@@ -24,7 +24,7 @@ export default function Home() {
       </header>
 
       {/* Walkthrough Section */}
-      <section className="py-60 flex-col">
+      <section className="py-60">
         <div className=" mx-auto text-center max-w-3xl">
           <SubTitle>How our service works?</SubTitle>
           <BodyText>
@@ -63,7 +63,36 @@ export default function Home() {
       <section></section>
 
       {/* Services Details Section */}
-      <section></section>
+      <section className="py-60 flex flex-row bg-black ">
+        <div className="flex-1 bg-gray-700"></div>
+
+        <div className="flex-1 flex-col bg-slate-500  ">
+          <SubTitle className="my-3px">
+            We cover all areas of <br /> your home or office
+          </SubTitle>
+
+          <p className="text-black-200">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            iusto ducimus deserunt vitae nulla officia quos neque saepe esse
+            libero dolor laudantium eius doloribus mollitia rem porro, maxime
+            minus excepturi.
+          </p>
+
+          <ul className="grid grid-cols-2 gap-small">
+            <li>Bathrooms</li>
+            <li>Kitchens</li>
+            <li>Living Rooms</li>
+            <li>Carpets</li>
+            <li>Bathrooms</li>
+            <li>Bedrooms</li>
+            <li>Offices</li>
+            <li>Businesses</li>
+            <li>Windows</li>
+          </ul>
+
+          <Button> Get a free quote </Button>
+        </div>
+      </section>
 
       {/* Contact Section */}
       <section></section>
