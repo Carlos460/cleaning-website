@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import { BodyText, SubTitle, Title } from "@/components/Typography";
 import StepCard from "@/widgets/StepCard";
+import ServiceCard from "@/widgets/ServiceCard";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
           <Button>Get a free quote</Button>
           <button></button>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 px-10">
           <div className="w-full h-full bg-blue-300"></div>
         </div>
       </header>
@@ -60,7 +61,34 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section></section>
+      <section className="py-60">
+        <div className="flex-col items-start gap-5 lg:flex lg:flex-row lg:items-end lg:justify-between">
+          <div className="lg:w-1/2 w-full">
+            <SubTitle>Take a look at our professional services</SubTitle>
+          </div>
+          <Button theme="outlined">Explore services</Button>
+        </div>        
+        <div className="gap-10 py-16 flex justify-center flex-wrap">
+          <ServiceCard
+            imgSrc=""
+            imgAlt=""
+            title="Home cleaning"
+            bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
+          />
+          <ServiceCard
+            imgSrc=""
+            imgAlt=""
+            title="Office cleaning"
+            bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
+          />
+          <ServiceCard
+            imgSrc=""
+            imgAlt=""
+            title="Rental cleaning"
+            bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
+          />
+        </div>
+      </section>
 
       {/* Services Details Section */}
       <section></section>
