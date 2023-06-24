@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import ListContainer from "@/components/DetailList";
 import { BodyText, SubTitle, Title } from "@/components/Typography";
 import StepCard from "@/widgets/StepCard";
 
@@ -63,34 +64,36 @@ export default function Home() {
       <section></section>
 
       {/* Services Details Section */}
-      <section className="py-60 flex flex-row bg-black ">
-        <div className="flex-1 bg-gray-700"></div>
+      <section className="py-60 flex flex-row ">
+        <div className="flex-1 object-cover bg-orange-300"></div>
 
-        <div className="flex-1 flex-col bg-slate-500  ">
-          <SubTitle className="my-3px">
+        <div className="flex flex-1 flex-col gap-8 py-6 pl-36">
+          <SubTitle className="my-3px my-10">
             We cover all areas of <br /> your home or office
           </SubTitle>
 
-          <p className="text-black-200">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            iusto ducimus deserunt vitae nulla officia quos neque saepe esse
-            libero dolor laudantium eius doloribus mollitia rem porro, maxime
-            minus excepturi.
-          </p>
+          <div className="pr-24">
+            <BodyText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </BodyText>
+          </div>
 
-          <ul className="grid grid-cols-2 gap-small">
-            <li>Bathrooms</li>
-            <li>Kitchens</li>
-            <li>Living Rooms</li>
-            <li>Carpets</li>
-            <li>Bathrooms</li>
-            <li>Bedrooms</li>
-            <li>Offices</li>
-            <li>Businesses</li>
-            <li>Windows</li>
+          <ul className="w-96 grid grid-cols-2 gap-y-4 gap-x-8 font-semibold text-lg text-gray-800">
+            <ListContainer>Bathrooms</ListContainer>
+            <ListContainer>Bedrooms</ListContainer>
+            <ListContainer>Kitchens</ListContainer>
+            <ListContainer>Offices</ListContainer>
+            <ListContainer>Living Rooms</ListContainer>
+            <ListContainer>Carpets</ListContainer>
+            <ListContainer>Businesses</ListContainer>
+            <ListContainer>Windows</ListContainer>
           </ul>
 
-          <Button> Get a free quote </Button>
+          <div className="w-48">
+            <Button> Get a free quote </Button>
+          </div>
         </div>
       </section>
 
