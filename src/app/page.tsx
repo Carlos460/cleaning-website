@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import ListContainer from "@/components/DetailList";
 import { BodyText, SubTitle, Title } from "@/components/Typography";
 import StepCard from "@/widgets/StepCard";
 import ServiceCard from "@/widgets/ServiceCard";
@@ -25,7 +26,7 @@ export default function Home() {
       </header>
 
       {/* Walkthrough Section */}
-      <section className="py-60 flex-col">
+      <section className="py-60">
         <div className=" mx-auto text-center max-w-3xl">
           <SubTitle>How our service works?</SubTitle>
           <BodyText>
@@ -91,7 +92,38 @@ export default function Home() {
       </section>
 
       {/* Services Details Section */}
-      <section></section>
+      <section className="py-60 flex flex-row ">
+        <div className="flex-1 object-cover bg-orange-300"></div>
+
+        <div className="flex flex-1 flex-col gap-8 py-6 pl-36">
+          <SubTitle className="my-3px my-10">
+            We cover all areas of <br /> your home or office
+          </SubTitle>
+
+          <div className="pr-24">
+            <BodyText>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </BodyText>
+          </div>
+
+          <ul className="w-96 grid grid-cols-2 gap-y-4 gap-x-8 font-semibold text-lg text-gray-800">
+            <ListContainer>Bathrooms</ListContainer>
+            <ListContainer>Bedrooms</ListContainer>
+            <ListContainer>Kitchens</ListContainer>
+            <ListContainer>Offices</ListContainer>
+            <ListContainer>Living Rooms</ListContainer>
+            <ListContainer>Carpets</ListContainer>
+            <ListContainer>Businesses</ListContainer>
+            <ListContainer>Windows</ListContainer>
+          </ul>
+
+          <div className="w-48">
+            <Button> Get a free quote </Button>
+          </div>
+        </div>
+      </section>
 
       {/* Contact Section */}
       <section></section>
