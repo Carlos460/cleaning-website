@@ -6,7 +6,7 @@ import NavLink from "./NavLink";
 export default function Navbar() {
   return (
     <nav className="flex justify-between py-5">
-      <div className="flex">
+      <div className="flex items-center">
         <h1 className="font-medium text-4xl">Brand</h1>
       </div>
       <div className="flex gap-x-10">
