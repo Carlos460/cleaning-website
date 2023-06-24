@@ -10,7 +10,7 @@ interface IServiceCard {
 
 export default function ServiceCard(props: IServiceCard) {
   return (
-    <div className="shadow px-5 py-14">
+    <div className="shadow-lg max-w-sm px-5 py-14 mt-20">
       <div className="w-60 h-60 bg-blue-400 mx-auto rounded-full mb-5">
         <Image src={props.imgSrc} alt={props.imgAlt} />
       </div>

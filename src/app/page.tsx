@@ -62,29 +62,29 @@ export default function Home() {
 
       {/* Services Section */}
       <section className="py-60">
-        <div className="flex flex-row items-end justify-between">
-          <div className="w-1/2">
+        <div className="flex-col items-start gap-5 lg:flex lg:flex-row lg:items-end lg:justify-between">
+          <div className="lg:w-1/2 w-full">
             <SubTitle>Take a look at our professional services</SubTitle>
           </div>
           <Button theme="outlined">Explore services</Button>
-        </div>
-        <div className="flex xl:flex-row gap-10 py-16">
+        </div>        
+        <div className="gap-10 py-16 flex justify-center flex-wrap">
           <ServiceCard
             imgSrc=""
             imgAlt=""
-            title="1. Schedule online"
+            title="Home cleaning"
             bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
           />
           <ServiceCard
             imgSrc=""
             imgAlt=""
-            title="1. Schedule online"
+            title="Office cleaning"
             bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
           />
           <ServiceCard
             imgSrc=""
             imgAlt=""
-            title="1. Schedule online"
+            title="Rental cleaning"
             bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
           />
         </div>
