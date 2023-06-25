@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import ListContainer from "@/components/DetailList";
 import { BodyText, SubTitle, Title } from "@/components/Typography";
+import { Form, InputField, SubmitButton, TextArea } from "@/components/Form";
 import StepCard from "@/widgets/StepCard";
 import ServiceCard from "@/widgets/ServiceCard";
 
@@ -68,7 +69,7 @@ export default function Home() {
             <SubTitle>Take a look at our professional services</SubTitle>
           </div>
           <Button theme="outlined">Explore services</Button>
-        </div>        
+        </div>
         <div className="gap-10 py-16 flex justify-center flex-wrap">
           <ServiceCard
             imgSrc=""
@@ -92,7 +93,7 @@ export default function Home() {
       </section>
 
       {/* Services Details Section */}
-      <section className="py-60 flex flex-row ">
+      <section className="relative py-60 flex flex-row ">
         <div className="flex-1 object-cover bg-orange-300"></div>
 
         <div className="flex flex-1 flex-col gap-8 py-6 pl-36">
@@ -120,13 +121,50 @@ export default function Home() {
           </ul>
 
           <div className="w-48">
-            <Button> Get a free quote </Button>
+            <Button>Get a free quote</Button>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section></section>
+      <section className="py-60 block lg:flex">
+        <div className="absolute bg-blue-50 h-full z-[-1] w-screen"></div>
+        <div className="flex-1">
+          <SubTitle>Request a free cleaning quote today</SubTitle>
+          <BodyText>
+            In dignissim euismod pretium amet enim a eu nam ut urna accumsan
+            pellentesque lacus duis pharetra eutortor.
+          </BodyText>
+          <div>
+            <div></div>
+            <p>CALL US NOW</p>
+            <p>(202)452-2932</p>
+          </div>
+          <p>Not Convinced yet?</p>
+          <BodyText>
+            Massa bibendum consectetur maurisid gravida purus, dolor dui amet
+            morbi non nunc urna purus diam.
+          </BodyText>
+          <Button theme="outlined">Browse our packages</Button>
+        </div>
+        <div className="flex-1 shadow-lg rounded-2xl p-10 my-10 bg-white lg:my-0">
+          
+          <form className="flex flex-col gap-5">
+            <div className="grid grid-cols-2 gap-x-8 gap-y-8">
+              <InputField placeholder="John Doe" fieldName="Full name" />
+              <InputField placeholder="(000)000-0000" fieldName="Phone number" />
+              <InputField placeholder="123 Cleaning Lane, NY" fieldName="Address" />
+              <InputField placeholder="john@doe.com" fieldName="Email" />
+              <InputField placeholder="Full cleaning" fieldName="Request service" />
+              <InputField placeholder="May 17, 2023" fieldName="Day of service" />
+            </div>
+            <TextArea fieldName="Add a note"></TextArea>
+            <div>
+              <SubmitButton text="Submit message" />
+            </div>
+          </form>
+        </div>
+      </section>
     </>
   );
 }
