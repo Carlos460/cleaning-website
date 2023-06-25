@@ -13,7 +13,7 @@ export function InputField(props: { fieldName: string; placeholder: string }) {
         {props.fieldName}
       </p>
       <input
-        className="p-5 w-full border border-solid rounded-2xl shadow-sm"
+        className="p-5 w-full border border-solid rounded-2xl shadow-sm placeholder-gray-500"
         placeholder={props.placeholder}
         type="text"
       />
