@@ -12,24 +12,16 @@ export default function Navbar() {
       <div className="flex gap-x-10">
         <ul className="flex gap-x-10 items-center">
           <NavLink>
-            <Link href={'/'}>
-              Home
-            </Link>
+            <Link href={"/"}>Home</Link>
           </NavLink>
           <NavLink>
-            <Link href={'/about'}>
-              About
-            </Link>
+            <Link href={"/about"}>About</Link>
           </NavLink>
           <NavLink>
-            <Link href={'/services'}>
-              Services
-            </Link>
+            <Link href={"/services"}>Services</Link>
           </NavLink>
           <NavLink>
-            <Link href={'/contact'}>
-              Contact
-            </Link>
+            <Link href={"/contact"}>Contact</Link>
           </NavLink>
         </ul>
         <Button>Get a free quote</Button>

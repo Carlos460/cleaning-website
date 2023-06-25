@@ -68,7 +68,7 @@ export default function Home() {
             <SubTitle>Take a look at our professional services</SubTitle>
           </div>
           <Button theme="outlined">Explore services</Button>
-        </div>        
+        </div>
         <div className="gap-10 py-16 flex justify-center flex-wrap">
           <ServiceCard
             imgSrc=""
@@ -93,7 +93,7 @@ export default function Home() {
 
       {/* Services Details Section */}
       <section className="py-60 flex flex-row ">
-        <div className="flex-1 object-cover bg-orange-300"></div>
+        <div className="flex-1 object-cover bg-blue-200"></div>
 
         <div className="flex flex-1 flex-col gap-8 py-6 pl-36">
           <SubTitle className="my-3px my-10">
