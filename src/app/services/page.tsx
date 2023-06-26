@@ -6,14 +6,14 @@ export default function Services() {
       {/* Pricing Section */}
       <Wrapper>
         <section className="py-64">
-          <h1>Reach out Section</h1>
+          <h1>Pricing Section</h1>
         </section>
       </Wrapper>
 
       {/* Review Section */}
       <Wrapper>
         <section className="py-64">
-          <h1>Asked Questions</h1>
+          <h1>Review Section</h1>
         </section>
       </Wrapper>
     </>
