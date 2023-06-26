@@ -1,8 +1,6 @@
 export function Title(props: any) {
   return (
-    <h1 className="text-6xl font-bold text-gray-800 mb-8">
-      {props.children}
-    </h1>
+    <h1 className="text-6xl font-bold text-gray-800 mb-8">{props.children}</h1>
   );
 }
 
@@ -15,9 +13,5 @@ export function SubTitle(props: any) {
 }
 
 export function BodyText(props: any) {
-  return (
-    <p className="text-lg font-normal text-gray-500">
-      {props.children}
-    </p>
-  );
+  return <p className="text-lg font-normal text-gray-500">{props.children}</p>;
 }
