@@ -37,7 +37,7 @@ export default function Footer() {
               1827 Nickel Road, Los Angeles, CA, 90017, United States
             </p>
             <p className="mb-1.5 sm:mb-2 md:mb-3 lg:mb-3.5 text-gray-700">
-              (414)567-2109
+              (000)-000-0000
             </p>
             <p>contact@cleaning.com</p>
           </div>
