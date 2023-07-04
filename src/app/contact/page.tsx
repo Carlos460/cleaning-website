@@ -1,13 +1,14 @@
-import { InputField, SubmitButton, TextArea } from "@/components/Form";
-import { BodyText, Title } from "@/components/Typography";
-import Wrapper from "@/components/Wrapper";
+import { InputField, SubmitButton, TextArea } from '@/components/Form';
+import { BodyText, SubTitle, Title } from '@/components/Typography';
+import Wrapper from '@/components/Wrapper';
+import ReachCard from '@/widgets/ReachCard';
 
 export default function Contact() {
   return (
     <>
       {/* Contact Form Section */}
       <Wrapper>
-          <section className="py-24 xl:py-60 flex flex-col xl:flex-row gap-10">
+        <section className="py-24 xl:py-60 flex flex-col xl:flex-row gap-10">
           <div className="flex-1 xl:w-auto max-w-2xl mx-auto">
             <Title>Get in touch with our team today</Title>
             <BodyText>
@@ -38,8 +39,34 @@ export default function Contact() {
 
       {/* Reach out Section */}
       <Wrapper>
-        <section className="py-64">
-          <h1>Reach out Section</h1>
+        <section className="pb-64">
+          <div className="text-center pb-10">
+            <SubTitle>Want to reach out directly?</SubTitle>
+            <div className="max-w-3xl mx-auto">
+              <BodyText>
+                Id purus mattis quis quis eros tellus amet enim integer lobortis
+                dui ut mauris blandit ut pellentesque ultricies purus pulvinar
+                id cursus adipiscing.
+              </BodyText>
+            </div>
+          </div>
+          <div className='flex lg:flex-row flex-col lg:gap-10 gap-20 pt-20'>
+            <ReachCard
+              title="Email us"
+              bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
+              infoText="contact@cleaning.com"
+            />
+            <ReachCard
+              title="Talk with us"
+              bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
+              infoText="(414)567-2109"
+            />
+            <ReachCard
+              title="Live Chat"
+              bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
+              infoText="Start Chat"
+            />
+          </div>
         </section>
       </Wrapper>
 
