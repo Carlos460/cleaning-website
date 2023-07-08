@@ -7,6 +7,7 @@ export default function Services() {
       <Wrapper>
         <section className="py-64">
           <h1>Pricing Section</h1>
+          <h1>Hello world</h1>
         </section>
       </Wrapper>
 
