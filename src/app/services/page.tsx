@@ -1,4 +1,5 @@
 import Wrapper from "@/components/Wrapper";
+import PricingCard from "@/widgets/PricingCard";
 
 export default function Services() {
   return (
@@ -6,8 +7,15 @@ export default function Services() {
       {/* Pricing Section */}
       <Wrapper>
         <section className="py-64">
-          <h1>Pricing Section</h1>
-          <h1>Hello world</h1>
+          <div>
+            <PricingCard
+              description=""
+              details=""
+              title=""
+              imageSrc=""
+              pricing=""
+            />
+          </div>
         </section>
       </Wrapper>
 
