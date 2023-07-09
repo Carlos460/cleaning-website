@@ -1,7 +1,9 @@
 import { InputField, SubmitButton, TextArea } from '@/components/Form';
 import { BodyText, SubTitle, Title } from '@/components/Typography';
 import Wrapper from '@/components/Wrapper';
+import ReachCard from '@/widgets/ReachCard';
 import DropDownInfo from '@/components/DropDownInfo';
+
 
 export default function Contact() {
   return (
@@ -39,8 +41,34 @@ export default function Contact() {
 
       {/* Reach out Section */}
       <Wrapper>
-        <section className="py-64">
-          <h1>Reach out Section</h1>
+        <section className="pb-64">
+          <div className="text-center pb-10">
+            <SubTitle>Want to reach out directly?</SubTitle>
+            <div className="max-w-3xl mx-auto">
+              <BodyText>
+                Id purus mattis quis quis eros tellus amet enim integer lobortis
+                dui ut mauris blandit ut pellentesque ultricies purus pulvinar
+                id cursus adipiscing.
+              </BodyText>
+            </div>
+          </div>
+          <div className='flex lg:flex-row flex-col lg:gap-10 gap-20 pt-20'>
+            <ReachCard
+              title="Email us"
+              bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
+              infoText="contact@cleaning.com"
+            />
+            <ReachCard
+              title="Talk with us"
+              bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
+              infoText="(414)567-2109"
+            />
+            <ReachCard
+              title="Live Chat"
+              bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
+              infoText="Start Chat"
+            />
+          </div>
         </section>
       </Wrapper>
 
