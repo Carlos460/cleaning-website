@@ -2,6 +2,8 @@ import { InputField, SubmitButton, TextArea } from '@/components/Form';
 import { BodyText, SubTitle, Title } from '@/components/Typography';
 import Wrapper from '@/components/Wrapper';
 import ReachCard from '@/widgets/ReachCard';
+import DropDownInfo from '@/components/DropDownInfo';
+
 
 export default function Contact() {
   return (
@@ -73,7 +75,41 @@ export default function Contact() {
       {/* Frequently Asked Question Section */}
       <Wrapper>
         <section className="py-64">
-          <h1>Asked Questions</h1>
+          <div className="text-center pb-10">
+            <SubTitle>Frequently Asked Questions</SubTitle>
+            <div className="max-w-2xl mx-auto">
+              <BodyText>
+                Cras tincidunt lobortis feugiat vivamus at morbi leo urna
+                molestie atole elementum eu facilisis faucibus interdum posuere.
+              </BodyText>
+            </div>
+          </div>
+          <div className="flex flex-col gap-8 max-w-4xl mx-auto shadow-sm border border-solid rounded-lg md:p-20 p-8">
+            <DropDownInfo
+              title="In which locations do you service?"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+            <DropDownInfo
+              title="Are you licensed and insured?"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+            <DropDownInfo
+              title="Are your cleaning products safe and eco-friendly?"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+            <DropDownInfo
+              title="Are there any additional fees or hidden costs??"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+            <DropDownInfo
+              title="Do you bring your own supplies and equipment?"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+            <DropDownInfo
+              title="What is your cancellation/rescheduling policy?"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+          </div>
         </section>
       </Wrapper>
     </>
