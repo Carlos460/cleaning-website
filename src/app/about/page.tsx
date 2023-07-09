@@ -1,5 +1,6 @@
 import Wrapper from "@/components/Wrapper";
 import { BodyText, SubTitle, Title } from "@/components/Typography";
+import StatCard from "@/components/Statistic Card";
 
 export default function About() {
   return (
@@ -27,6 +28,14 @@ export default function About() {
       </section>
 
       {/* Statistics Section */}
+
+      <Wrapper>
+        <div className="py-24 flex flex-row gap-5 justify-center">
+          <StatCard icon="test" number={3000} subtext="blah blah" />
+          <StatCard icon="test" number={3000} subtext="blah blah" />
+          <StatCard icon="test" number={3000} subtext="blah blah" />
+        </div>
+      </Wrapper>
 
       {/* Equipment Section */}
       <Wrapper>
