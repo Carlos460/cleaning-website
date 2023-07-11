@@ -1,5 +1,4 @@
-import Button from "@/components/Button";
-import { BodyText, Details, SubTitle } from "@/components/Typography";
+import { Details } from "@/components/Typography";
 import Image from "next/image";
 import { DetailList } from "@/components/DetailList";
 interface IPricingCard {
