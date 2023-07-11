@@ -12,6 +12,12 @@ export function SubTitle(props: any) {
   );
 }
 
+export function Details(props: any) {
+  return (
+    <p className="text-base font-medium text-gray-500 mb-4">{props.children}</p>
+  );
+}
+
 export function BodyText(props: any) {
   return (
     <p className="md:text-lg text-base font-normal text-gray-500">
