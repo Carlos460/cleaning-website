@@ -1,5 +1,6 @@
 import Wrapper from "@/components/Wrapper";
 import { BodyText, SubTitle, Title } from "@/components/Typography";
+import ListContainer from "@/components/DetailList";
 
 export default function About() {
   return (
@@ -31,7 +32,20 @@ export default function About() {
       {/* Equipment Section */}
       <Wrapper>
         <section className="py-64">
-          <h1>Equipment Section</h1>
+          <div></div>
+          <div>
+            <SubTitle>We have the best staff & equipment</SubTitle>
+            <ul className="w-96 grid grid-cols-2 gap-y-4 gap-x-8 font-semibold text-lg text-gray-800">
+              <ListContainer>Bathrooms</ListContainer>
+              <ListContainer>Bedrooms</ListContainer>
+              <ListContainer>Kitchens</ListContainer>
+              <ListContainer>Offices</ListContainer>
+              <ListContainer>Living Rooms</ListContainer>
+              <ListContainer>Carpets</ListContainer>
+              <ListContainer>Businesses</ListContainer>
+              <ListContainer>Windows</ListContainer>
+            </ul>
+          </div>
         </section>
       </Wrapper>
 
