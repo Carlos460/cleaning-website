@@ -1,4 +1,3 @@
-import { SubTitle } from "@/components/Typography";
 import Wrapper from "@/components/Wrapper";
 import PricingCard from "@/widgets/PricingCard";
 import { BodyText, SubTitle, Title } from "@/components/Typography";
