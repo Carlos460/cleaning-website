@@ -58,9 +58,9 @@ export default function Navbar() {
                 }`}
               ></span>
               <span
-                className={`block w-7 h-0.5 bg-white transition-all duration-200 ${
+                className={`block w-7 h-0.5 transition-all duration-200 ${
                   hoverHamburger && !activeHamburger ? 'w-8' : null
-                } ${activeHamburger ? 'bg-transparent' : null}`}
+                } ${activeHamburger ? 'bg-transparent' : 'bg-white'}`}
               ></span>
               <span
                 className={`block h-0.5 bg-white transition-all duration-300 ${
@@ -72,7 +72,7 @@ export default function Navbar() {
             </div>
 
             {/* sidebar */}
-            <div className={`${activeHamburger ? '' : ''}`}></div>
+            <div className={`lg:hidden ${activeHamburger ? '' : ''}`}></div>
           </div>
         </div>
       </nav>
