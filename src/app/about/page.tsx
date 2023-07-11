@@ -31,11 +31,22 @@ export default function About() {
 
       <Wrapper>
         <div className="py-24 flex flex-row gap-5 justify-center">
-          <StatCard icon="test" number={3000} subtext="blah blah" />
-          <StatCard icon="test" number={3000} subtext="blah blah" />
-          <StatCard icon="test" number={3000} subtext="blah blah" />
+          <StatCard
+            icon="test"
+            number={3000}
+            plus="+"
+            subtext="HAPPY CLIENTS"
+          />
+
+          <StatCard icon="test" number={100} plus="+" subtext="EMPLOYEES" />
+
+          <StatCard icon="test" number={5000} plus="+" subtext="JOBS DONE" />
+
+          <StatCard icon="test" number={2023} subtext="FOUNDED IN" />
         </div>
       </Wrapper>
+
+      <div className="border-b-2 border-gray-200 mx-auto w-3/5" />
 
       {/* Equipment Section */}
       <Wrapper>
