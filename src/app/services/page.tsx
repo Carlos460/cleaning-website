@@ -19,7 +19,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="gap-10 py-16 flex justify-center text-left">
+          <div className="gap-10 py-16 flex lg:px-0 px-24 lg:flex-row flex-col justify-center text-left">
             <PricingCard
               imageSrc=""
               alt=""
