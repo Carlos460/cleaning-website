@@ -19,37 +19,40 @@ export default function Services() {
               </div>
             </div>
           </div>
-          <div className="gap-10 py-16 flex justify-center flex-wrap ">
+          <div className="gap-10 py-16 flex justify-center text-left">
             <PricingCard
-              imgSrc=""
-              imgAlt=""
+              imageSrc=""
+              alt=""
               title="BASIC"
               pricing="$100 USD"
-              description="We clean house okay"
-              details="What's included"
+              description="Condimentum mauris sit cursus amet id non neque pharetra nulla
+              ornare sed facilisis senectus dapibus nibh"
+              details="What's included?"
               sqft="Up to 1500 sqft"
               hours="4 hours"
               task="Up to 2 cleaning task"
               buttonTheme="grey"
             />
             <PricingCard
-              imgSrc=""
-              imgAlt=""
+              imageSrc=""
+              alt=""
               title="STANDARD"
               pricing="$149 USD"
-              description="We clean house better"
-              details="What's included"
+              description="Condimentum mauris sit cursus amet id non neque pharetra nulla
+              ornare sed facilisis senectus dapibus nibh"
+              details="What's included?"
               sqft="Up to 2500 sqft"
               hours="6 hours"
               task="Up to 4 cleaning task"
               buttonTheme="grey"
             />
             <PricingCard
-              imgSrc=""
-              imgAlt=""
+              imageSrc=""
+              alt=""
               title="DELUXE"
               pricing="$299 USD"
-              description="We clean house good"
+              description="Condimentum mauris sit cursus amet id non neque pharetra nulla
+              ornare sed facilisis senectus dapibus nibh"
               details="What's included?"
               sqft="Up to 2500 sqft"
               hours="12 hours"
