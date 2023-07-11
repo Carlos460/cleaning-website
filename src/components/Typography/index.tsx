@@ -6,7 +6,7 @@ export function Title(props: any) {
 
 export function SubTitle(props: any) {
   return (
-    <h2 className="text-5xl font-semibold text-gray-800 mb-4">
+    <h2 className="md:text-5xl text-3xl font-semibold text-gray-800 mb-4">
       {props.children}
     </h2>
   );
@@ -19,5 +19,9 @@ export function Details(props: any) {
 }
 
 export function BodyText(props: any) {
-  return <p className="text-lg font-normal text-gray-500">{props.children}</p>;
+  return (
+    <p className="md:text-lg text-base font-normal text-gray-500">
+      {props.children}
+    </p>
+  );
 }

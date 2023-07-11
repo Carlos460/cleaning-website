@@ -1,13 +1,16 @@
-import { InputField, SubmitButton, TextArea } from "@/components/Form";
-import { BodyText, Title } from "@/components/Typography";
-import Wrapper from "@/components/Wrapper";
+import { InputField, SubmitButton, TextArea } from '@/components/Form';
+import { BodyText, SubTitle, Title } from '@/components/Typography';
+import Wrapper from '@/components/Wrapper';
+import ReachCard from '@/widgets/ReachCard';
+import DropDownInfo from '@/components/DropDownInfo';
+
 
 export default function Contact() {
   return (
     <>
       {/* Contact Form Section */}
       <Wrapper>
-          <section className="py-24 xl:py-60 flex flex-col xl:flex-row gap-10">
+        <section className="py-24 xl:py-60 flex flex-col xl:flex-row gap-10">
           <div className="flex-1 xl:w-auto max-w-2xl mx-auto">
             <Title>Get in touch with our team today</Title>
             <BodyText>
@@ -38,15 +41,75 @@ export default function Contact() {
 
       {/* Reach out Section */}
       <Wrapper>
-        <section className="py-64">
-          <h1>Reach out Section</h1>
+        <section className="pb-64">
+          <div className="text-center pb-10">
+            <SubTitle>Want to reach out directly?</SubTitle>
+            <div className="max-w-3xl mx-auto">
+              <BodyText>
+                Id purus mattis quis quis eros tellus amet enim integer lobortis
+                dui ut mauris blandit ut pellentesque ultricies purus pulvinar
+                id cursus adipiscing.
+              </BodyText>
+            </div>
+          </div>
+          <div className='flex lg:flex-row flex-col lg:gap-10 gap-20 pt-20'>
+            <ReachCard
+              title="Email us"
+              bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
+              infoText="contact@cleaning.com"
+            />
+            <ReachCard
+              title="Talk with us"
+              bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
+              infoText="(414)567-2109"
+            />
+            <ReachCard
+              title="Live Chat"
+              bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
+              infoText="Start Chat"
+            />
+          </div>
         </section>
       </Wrapper>
 
       {/* Frequently Asked Question Section */}
       <Wrapper>
         <section className="py-64">
-          <h1>Asked Questions</h1>
+          <div className="text-center pb-10">
+            <SubTitle>Frequently Asked Questions</SubTitle>
+            <div className="max-w-2xl mx-auto">
+              <BodyText>
+                Cras tincidunt lobortis feugiat vivamus at morbi leo urna
+                molestie atole elementum eu facilisis faucibus interdum posuere.
+              </BodyText>
+            </div>
+          </div>
+          <div className="flex flex-col gap-8 max-w-4xl mx-auto shadow-sm border border-solid rounded-lg md:p-20 p-8">
+            <DropDownInfo
+              title="In which locations do you service?"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+            <DropDownInfo
+              title="Are you licensed and insured?"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+            <DropDownInfo
+              title="Are your cleaning products safe and eco-friendly?"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+            <DropDownInfo
+              title="Are there any additional fees or hidden costs??"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+            <DropDownInfo
+              title="Do you bring your own supplies and equipment?"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+            <DropDownInfo
+              title="What is your cancellation/rescheduling policy?"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit id venenatis pretium risus euismod dictum egestas orci netus feugiat ut egestas ut sagittis tincidunt phasellus elit etiam cursus orci in. Id sed montes."
+            />
+          </div>
         </section>
       </Wrapper>
     </>
