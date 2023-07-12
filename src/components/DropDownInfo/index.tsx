@@ -15,7 +15,7 @@ export default function DropDownInfo(props: IDropDownInfo) {
     <>
       <div
         onClick={() => setActive(!active)}
-        className="hover:translate-x-5 transition-transform duration-300 ease-in-out"
+        className="hover:translate-x-5 cursor-pointer transition-transform duration-300 ease-in-out"
       >
         <div className="flex justify-between items-center">
           <h1 className="font-semibold md:text-2xl text-lg py-2 ">
