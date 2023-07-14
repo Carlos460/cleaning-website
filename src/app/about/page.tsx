@@ -1,6 +1,6 @@
 import Wrapper from "@/components/Wrapper";
 import { BodyText, SubTitle, Title } from "@/components/Typography";
-import StatCard from "@/components/Statistic Card";
+import StatCard from "@/widgets/StatisticCard";
 
 export default function About() {
   return (

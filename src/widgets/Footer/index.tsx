@@ -39,7 +39,9 @@ export default function Footer() {
             <p className="mb-1.5 sm:mb-2 md:mb-3 lg:mb-3.5 text-gray-700">
               (000)-000-0000
             </p>
-            <p>contact@cleaning.com</p>
+            <p className="w-auto mb-1.5 sm:mb-2 md:mb-3 lg:mb-3.5 text-gray-700">
+              contact@cleaning.com
+            </p>
           </div>
 
           {/* Column 3 */}
