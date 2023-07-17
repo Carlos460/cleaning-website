@@ -31,19 +31,30 @@ export default function About() {
 
       {/* Equipment Section */}
       <Wrapper>
-        <section className="py-64">
-          <div></div>
-          <div>
+        <section className="flex lg:flex-row flex-col-reverse pt-60 pb-60 gap-10">
+          {/* Equipment Image Container */}
+          <div className="flex-1">
+            <div className="w-full lg:h-full h-96  bg-blue-300"></div>
+          </div>
+          <div className="flex-1">
             <SubTitle>We have the best staff & equipment</SubTitle>
-            <ul className="w-96 grid grid-cols-2 gap-y-4 gap-x-8 font-semibold text-lg text-gray-800">
-              <ListContainer>Bathrooms</ListContainer>
-              <ListContainer>Bedrooms</ListContainer>
-              <ListContainer>Kitchens</ListContainer>
-              <ListContainer>Offices</ListContainer>
-              <ListContainer>Living Rooms</ListContainer>
-              <ListContainer>Carpets</ListContainer>
-              <ListContainer>Businesses</ListContainer>
-              <ListContainer>Windows</ListContainer>
+            <div className="pt-4 pb-10">
+              <BodyText>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur
+              </BodyText>
+            </div>
+            <ul className="w-auto grid grid-cols-2 gap-y-6 font-semibold text-lg text-gray-800">
+              <ListContainer>Window Cleaner</ListContainer>
+              <ListContainer>Carpet Cleaner</ListContainer>
+              <ListContainer>Work Vans</ListContainer>
+              <ListContainer>Floor Polsiher</ListContainer>
+              <ListContainer>Microfiber</ListContainer>
+              <ListContainer>Sanaitizer</ListContainer>
+              <ListContainer>Water Jet Cleaner</ListContainer>
+              <ListContainer>Steam Cleaner</ListContainer>
             </ul>
           </div>
         </section>
