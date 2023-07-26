@@ -9,7 +9,9 @@ export default function Navbar() {
     <Wrapper>
       <nav className="flex justify-between py-5">
         <div className="flex items-center">
-          <h1 className="font-medium text-4xl">Brand</h1>
+          <Link href="/">
+            <h1 className="font-medium text-4xl">Brand</h1>
+          </Link>
         </div>
         <div className="flex gap-x-10">
           <ul className="flex gap-x-10 items-center">
