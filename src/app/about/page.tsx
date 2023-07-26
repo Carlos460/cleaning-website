@@ -1,6 +1,7 @@
-import Wrapper from "@/components/Wrapper";
-import { BodyText, SubTitle, Title } from "@/components/Typography";
-import ListContainer from "@/components/DetailList";
+import Wrapper from '@/components/Wrapper';
+import { BodyText, SubTitle, Title } from '@/components/Typography';
+import ListContainer from '@/components/DetailList';
+import ValueCard from '@/widgets/ValueCard';
 
 export default function About() {
   return (
@@ -8,10 +9,9 @@ export default function About() {
       {/* Hero Section */}
       <section className="flex flex-col border-b-2">
         <Wrapper>
-          <header className="pt-20 flex justify-center flex-col text-center">
+          <header className="pt-32 flex justify-center flex-col text-center">
             <text className="text-6xl font-semibold mb-4 ">
-              {" "}
-              About our company{" "}
+              About our company
             </text>
             <div className="h-16 max-w-3xl m-auto text-center">
               <BodyText>
@@ -63,7 +63,41 @@ export default function About() {
       {/* Values Section */}
       <Wrapper>
         <section className="py-64">
-          <h1>Values Section</h1>
+          <div className="flex lg:flex-row flex-col justify-between mb-10">
+            <SubTitle>Our Values</SubTitle>
+            <div className="max-w-lg">
+              <BodyText>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor amet.
+              </BodyText>
+            </div>
+          </div>
+          <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-6">
+            <ValueCard
+              title="Transparency"
+              body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
+            />
+            <ValueCard
+              title="Responsibility"
+              body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
+            />
+            <ValueCard
+              title="Security"
+              body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
+            />
+            <ValueCard
+              title="Trust"
+              body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
+            />
+            <ValueCard
+              title="Quality"
+              body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
+            />
+            <ValueCard
+              title="Puntuality"
+              body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
+            />
+          </div>
         </section>
       </Wrapper>
 
