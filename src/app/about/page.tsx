@@ -1,7 +1,11 @@
-import Wrapper from '@/components/Wrapper';
-import { BodyText, SubTitle, Title } from '@/components/Typography';
+
+import Wrapper from "@/components/Wrapper";
+import Button from "@/components/Button";
+import { BodyText, SubTitle, Title } from "@/components/Typography";
+import TeamCard from "@/widgets/TeamCard";
 import ListContainer from '@/components/DetailList';
 import ValueCard from '@/widgets/ValueCard';
+
 
 export default function About() {
   return (
@@ -104,7 +108,28 @@ export default function About() {
       {/* Team Section */}
       <Wrapper>
         <section className="py-64">
-          <h1>Team Section</h1>
+          <div className=" mx-auto text-center max-w-3xl">
+            <SubTitle>Meet our wonderful team</SubTitle>
+            <BodyText>
+              Sagittis nibh scelerisque vitae eget vulputate sem elementum sed
+              neque nisi felis non ultrices massa id egestas quam velit pretium
+              nu.
+            </BodyText>
+          </div>
+          <div className="gap-10 py-16 flex justify-center flex-wrap">
+            <TeamCard name="John Carter" jobTitle="HOUSE CLEANER" />
+            <TeamCard name="Sophie Moore" jobTitle="OFFICE CLEANER" />
+            <TeamCard name="Matt Cannon" jobTitle="INDUSTRIAL CLEANER" />
+            <TeamCard name="Andy Smith" jobTitle="OFFICE CLEANER" />
+            <TeamCard name="Patrick Meyer" jobTitle="INDUSTRIAL CLEANER" />
+            <TeamCard name="Lily Woods" jobTitle="HOUSE CLEANER" />
+          </div>
+          <div>
+            <div className="flex gap-10 justify-center">
+              <Button>Get a free quote</Button>
+              <Button theme="outlined">Explore Services</Button>
+            </div>
+          </div>
         </section>
       </Wrapper>
     </>
