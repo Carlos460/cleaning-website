@@ -2,8 +2,7 @@ import Wrapper from "@/components/Wrapper";
 import PricingCard from "@/widgets/PricingCard";
 import { BodyText, SubTitle, Title } from "@/components/Typography";
 import ReviewCard from "@/widgets/ReviewCard";
-
-
+import Link from "next/link";
 export default function Services() {
   return (
     <>
@@ -22,45 +21,51 @@ export default function Services() {
             </div>
           </div>
           <div className="gap-10 py-16 flex lg:px-0 px-24 lg:flex-row flex-col justify-center text-left">
-            <PricingCard
-              imageSrc=""
-              alt=""
-              title="BASIC"
-              pricing="$100 USD"
-              description="Condimentum mauris sit cursus amet id non neque pharetra nulla
+            <Link href="/#contact">
+              <PricingCard
+                imageSrc=""
+                alt=""
+                title="BASIC"
+                pricing="$100 USD"
+                description="Condimentum mauris sit cursus amet id non neque pharetra nulla
               ornare sed facilisis senectus dapibus nibh"
-              details="What's included?"
-              sqft="Up to 1500 sqft"
-              hours="4 hours"
-              task="Up to 2 cleaning task"
-              buttonTheme="grey"
-            />
-            <PricingCard
-              imageSrc=""
-              alt=""
-              title="STANDARD"
-              pricing="$149 USD"
-              description="Condimentum mauris sit cursus amet id non neque pharetra nulla
+                details="What's included?"
+                sqft="Up to 1500 sqft"
+                hours="4 hours"
+                task="Up to 2 cleaning task"
+                buttonTheme="grey"
+              />
+            </Link>
+            <Link href="/#contact">
+              <PricingCard
+                imageSrc=""
+                alt=""
+                title="STANDARD"
+                pricing="$149 USD"
+                description="Condimentum mauris sit cursus amet id non neque pharetra nulla
               ornare sed facilisis senectus dapibus nibh"
-              details="What's included?"
-              sqft="Up to 2500 sqft"
-              hours="6 hours"
-              task="Up to 4 cleaning task"
-              buttonTheme="grey"
-            />
-            <PricingCard
-              imageSrc=""
-              alt=""
-              title="DELUXE"
-              pricing="$299 USD"
-              description="Condimentum mauris sit cursus amet id non neque pharetra nulla
+                details="What's included?"
+                sqft="Up to 2500 sqft"
+                hours="6 hours"
+                task="Up to 4 cleaning task"
+                buttonTheme="grey"
+              />
+            </Link>
+            <Link href="/#contact">
+              <PricingCard
+                imageSrc=""
+                alt=""
+                title="DELUXE"
+                pricing="$299 USD"
+                description="Condimentum mauris sit cursus amet id non neque pharetra nulla
               ornare sed facilisis senectus dapibus nibh"
-              details="What's included?"
-              sqft="Up to 2500 sqft"
-              hours="12 hours"
-              task="Up to 10 cleaning task"
-              outline={true}
-            />
+                details="What's included?"
+                sqft="Up to 2500 sqft"
+                hours="12 hours"
+                task="Up to 10 cleaning task"
+                outline={true}
+              />
+            </Link>
           </div>
         </section>
       </Wrapper>

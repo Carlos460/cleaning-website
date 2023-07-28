@@ -83,7 +83,9 @@ export default function Footer() {
               </BodyText>
             </div>
 
-            <Button> Request a free quote </Button>
+            <Link href="/#contact">
+              <Button> Request a free quote </Button>
+            </Link>
           </div>
         </div>
       </Wrapper>

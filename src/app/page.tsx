@@ -1,10 +1,11 @@
-import Button from '@/components/Button';
-import ListContainer from '@/components/DetailList';
-import { BodyText, SubTitle, Title } from '@/components/Typography';
-import { InputField, SubmitButton, TextArea } from '@/components/Form';
-import StepCard from '@/widgets/StepCard';
-import ServiceCard from '@/widgets/ServiceCard';
-import Wrapper from '@/components/Wrapper';
+import Button from "@/components/Button";
+import ListContainer from "@/components/DetailList";
+import { BodyText, SubTitle, Title } from "@/components/Typography";
+import { InputField, SubmitButton, TextArea } from "@/components/Form";
+import StepCard from "@/widgets/StepCard";
+import ServiceCard from "@/widgets/ServiceCard";
+import Wrapper from "@/components/Wrapper";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
               Full of experience and good references cleaning apartments, homes,
               and offices!
             </p>
-            <Button>Get a free quote</Button>
-            <button></button>
+            <Link href="/#contact">
+              <Button>Get a free quote</Button>
+            </Link>
           </div>
           <div className="lg:flex-1 lg:px-10 lg:py-0 pt-10">
             <div className="w-full h-96 bg-blue-300"></div>
@@ -61,8 +63,12 @@ export default function Home() {
             />
           </div>
           <div className="flex sm:flex-row flex-col lg:gap-10 gap-4 justify-center">
-            <Button>Get a free quote</Button>
-            <Button theme="outlined">Explore Services</Button>
+             <Link href="/#contact">
+              <Button>Get a free quote</Button>
+            </Link>
+            <Link href="/services">
+              <Button theme="outlined">Explore Services</Button>
+            </Link>
           </div>
         </section>
       </Wrapper>
@@ -74,7 +80,9 @@ export default function Home() {
             <div className="lg:w-1/2 w-full">
               <SubTitle>Take a look at our professional services</SubTitle>
             </div>
-            <Button theme="outlined">Explore services</Button>
+            <Link href="/services">
+              <Button theme="outlined">Explore services</Button>
+            </Link>
           </div>
           <div className="gap-10 py-16 flex justify-center flex-wrap">
             <ServiceCard
@@ -129,7 +137,9 @@ export default function Home() {
             </ul>
 
             <div className="w-48">
-              <Button>Get a free quote</Button>
+              <Link href="/#contact">
+                <Button>Get a free quote</Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -138,8 +148,10 @@ export default function Home() {
       {/* Contact Section */}
       <section className="bg-[#F7F9FC]">
         <Wrapper>
-          <div className="lg:py-60 py-32 block xl:flex">
-            <div className="flex-1 xl:pr-28 pr-0 pt-16">
+
+           <div className="lg:py-60 py-32 block xl:flex">
+            <div id="contact" className="flex-1 xl:pr-28 pr-0 pt-16">
+
               <div className="[&>h2]:leading-tight">
                 <SubTitle>Request a free cleaning quote today</SubTitle>
               </div>
@@ -160,7 +172,9 @@ export default function Home() {
                 amet morbi non nunc urna purus diam.
               </BodyText>
               <div className="pt-5 pb-20">
-                <Button theme="outlined">Browse our packages</Button>
+                <Link href="/services">
+                  <Button theme="outlined">Browse our packages</Button>
+                </Link>
               </div>
             </div>
             <div className="flex-1 mx-auto xl:mx-0 max-w-2xl shadow-lg rounded-2xl md:p-10 p-8 my-10 bg-white lg:my-0">

@@ -1,6 +1,7 @@
 import { Details } from "@/components/Typography";
 import Image from "next/image";
 import { DetailList } from "@/components/DetailList";
+import Link from "next/link";
 interface IPricingCard {
   imageSrc: string;
   alt: string;
