@@ -30,23 +30,28 @@ export default function About() {
       {/* Statistics Section */}
 
       <Wrapper>
-        <div className="py-24 flex flex-row gap-5 justify-center">
-          <StatCard
-            icon="test"
-            number={3000}
-            plus="+"
-            subtext="HAPPY CLIENTS"
-          />
-
-          <StatCard icon="test" number={100} plus="+" subtext="EMPLOYEES" />
-
-          <StatCard icon="test" number={5000} plus="+" subtext="JOBS DONE" />
-
-          <StatCard icon="test" number={2023} subtext="FOUNDED IN" />
+        <div className="py-24 grid grid-cols-1 sm:grid-cols-2 gap-5 justify-center md:gap-8 lg:grid-cols-4">
+          <div className="mb-4 md:mb-0">
+            <StatCard
+              icon="test"
+              number={3000}
+              plus="+"
+              subtext="HAPPY CLIENTS"
+            />
+          </div>
+          <div className="mb-4 md:mb-0">
+            <StatCard icon="test" number={100} plus="+" subtext="EMPLOYEES" />
+          </div>
+          <div className="mb-4 md:mb-0">
+            <StatCard icon="test" number={5000} plus="+" subtext="JOBS DONE" />
+          </div>
+          <div>
+            <StatCard icon="test" number={2023} subtext="FOUNDED IN" />
+          </div>
         </div>
       </Wrapper>
 
-      <div className="border-b-2 border-gray-200 mx-auto w-3/5" />
+      <div className="border-b-2 border-gray-200 mx-auto w-full md:w-3/5" />
 
       {/* Equipment Section */}
       <Wrapper>
