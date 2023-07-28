@@ -6,17 +6,18 @@ import StepCard from "@/widgets/StepCard";
 import ServiceCard from "@/widgets/ServiceCard";
 import Wrapper from "@/components/Wrapper";
 import Link from "next/link";
+
 export default function Home() {
   return (
     <>
       {/* Hero Section*/}
       <Wrapper>
-        <header className="flex pt-64 pb-64">
-          <div className="flex-1">
+        <header className="flex lg:flex-row flex-col lg:pt-64 pt-32 lg:pb-64 pb-0">
+          <div className="lg:flex-1">
             <Title className="text-6xl font-bold text-gray-800 mb-8">
               Reliable cleaning services for your home
             </Title>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="sm:text-xl text-sm  text-gray-600 mb-8">
               Full of experience and good references cleaning apartments, homes,
               and offices!
             </p>
@@ -24,15 +25,15 @@ export default function Home() {
               <Button>Get a free quote</Button>
             </Link>
           </div>
-          <div className="flex-1 px-10">
-            <div className="w-full h-full bg-blue-300"></div>
+          <div className="lg:flex-1 lg:px-10 lg:py-0 pt-10">
+            <div className="w-full h-96 bg-blue-300"></div>
           </div>
         </header>
       </Wrapper>
 
       {/* Walkthrough Section */}
       <Wrapper>
-        <section className="py-60">
+        <section className="md:pt-60 md:pb-60 pt-32 pb-0">
           <div className=" mx-auto text-center max-w-3xl">
             <SubTitle>How our service works?</SubTitle>
             <BodyText>
@@ -41,7 +42,7 @@ export default function Home() {
               nu.
             </BodyText>
           </div>
-          <div className="flex justify-center gap-10 py-16">
+          <div className="flex lg:flex-row flex-col justify-center gap-10 py-16">
             <StepCard
               imageSrc=""
               alt=""
@@ -61,8 +62,8 @@ export default function Home() {
               description="Nunc maecenas sollicitudin metus tellus mattis sed porttitor cursus eleifend."
             />
           </div>
-          <div className="flex gap-10 justify-center">
-            <Link href="/#contact">
+          <div className="flex sm:flex-row flex-col lg:gap-10 gap-4 justify-center">
+             <Link href="/#contact">
               <Button>Get a free quote</Button>
             </Link>
             <Link href="/services">
@@ -108,20 +109,20 @@ export default function Home() {
 
       {/* Services Details Section */}
       <Wrapper>
-        <section className="py-60 flex flex-row ">
-          <div className="flex-1 object-cover bg-blue-200"></div>
+        <section className="lg:py-60 pt-0 pb-10 flex lg:flex-row flex-col">
+          <div className="lg:flex-1 object-cover bg-blue-200 lg:w-auto w-full lg:h-auto h-80"></div>
 
-          <div className="flex flex-1 flex-col gap-8 py-6 pl-36">
-            <SubTitle className="my-3px my-10">
-              We cover all areas of <br /> your home or office
-            </SubTitle>
+          <div className="flex lg:flex-1 flex-col gap-8 py-6 px-0 xl:pl-36 lg:px-5">
+            <div className="lg:pr-0 md:pr-24 pr-12">
+              <SubTitle>We cover all areas of your home or office</SubTitle>
 
-            <div className="pr-24">
-              <BodyText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </BodyText>
+              <div className="md:pr-24 pr-6">
+                <BodyText>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </BodyText>
+              </div>
             </div>
 
             <ul className="w-96 grid grid-cols-2 gap-y-4 gap-x-8 font-semibold text-lg text-gray-800">
@@ -147,8 +148,10 @@ export default function Home() {
       {/* Contact Section */}
       <section className="bg-[#F7F9FC]">
         <Wrapper>
-          <div className="py-60 block xl:flex">
+
+           <div className="lg:py-60 py-32 block xl:flex">
             <div id="contact" className="flex-1 xl:pr-28 pr-0 pt-16">
+
               <div className="[&>h2]:leading-tight">
                 <SubTitle>Request a free cleaning quote today</SubTitle>
               </div>
