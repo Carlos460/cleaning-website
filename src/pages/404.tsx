@@ -13,7 +13,7 @@ export default function Custom404() {
       <Wrapper>
         <section className="py-60 flex flex-col gap-5">
           <h1 className="text-8xl text-gray-800 font-bold">Oops!!!</h1>
-          <SubTitle>Sorry, this page dosn't exist...</SubTitle>
+          <SubTitle>Sorry, this page dosn&apos;t exist...</SubTitle>
           <Link href="/">
             <Button> Go back to Homepage </Button>
           </Link>
