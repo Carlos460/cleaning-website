@@ -71,7 +71,10 @@ export default function Navbar() {
             </ul>
           </div>
           <div
-            onClick={() => setActiveHamburger(false)}
+            onClick={() => {
+              setActiveHamburger(false);
+              resetScrollDirection();
+            }}
             className={`absolute z-10 top-0 left-0 w-screen h-screen bg-black cursor-pointer transition-all duration-500 ${
               activeHamburger ? 'opacity-25' : 'opacity-0 pointer-events-none'
             }`}
