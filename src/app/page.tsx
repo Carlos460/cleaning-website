@@ -1,11 +1,13 @@
-import Button from "@/components/Button";
-import ListContainer from "@/components/DetailList";
-import { BodyText, SubTitle, Title } from "@/components/Typography";
-import { InputField, SubmitButton, TextArea } from "@/components/Form";
-import StepCard from "@/widgets/StepCard";
-import ServiceCard from "@/widgets/ServiceCard";
-import Wrapper from "@/components/Wrapper";
-import Link from "next/link";
+'use client';
+import Button from '@/components/Button';
+import ListContainer from '@/components/DetailList';
+import { BodyText, SubTitle, Title } from '@/components/Typography';
+import { InputField, SubmitButton, TextArea } from '@/components/Form';
+import StepCard from '@/widgets/StepCard';
+import ServiceCard from '@/widgets/ServiceCard';
+import Wrapper from '@/components/Wrapper';
+import Link from 'next/link';
+import AnimatePresence from '@/components/AnimatePresence';
 
 export default function Home() {
   return (
@@ -14,95 +16,117 @@ export default function Home() {
       <Wrapper>
         <header className="flex lg:flex-row flex-col lg:pt-64 pt-32 lg:pb-64 pb-0">
           <div className="lg:flex-1">
-            <Title className="text-6xl font-bold text-gray-800 mb-8">
-              Reliable cleaning services for your home
-            </Title>
-            <p className="sm:text-xl text-sm  text-gray-600 mb-8">
-              Full of experience and good references cleaning apartments, homes,
-              and offices!
-            </p>
-            <Link href="/#contact">
-              <Button>Get a free quote</Button>
-            </Link>
+            <AnimatePresence>
+              <Title className="text-6xl font-bold text-gray-800 mb-8">
+                Reliable cleaning services for your home
+              </Title>
+              <p className="sm:text-xl text-sm  text-gray-600 mb-8">
+                Full of experience and good references cleaning apartments,
+                homes, and offices!
+              </p>
+              <Link href="/#contact">
+                <Button>Get a free quote</Button>
+              </Link>
+            </AnimatePresence>
           </div>
           <div className="lg:flex-1 lg:px-10 lg:py-0 pt-10">
-            <div className="w-full h-96 bg-blue-300"></div>
+            <AnimatePresence delay={0.2}>
+              <div className="w-full h-96 bg-blue-300"></div>
+            </AnimatePresence>
           </div>
         </header>
       </Wrapper>
 
       {/* Walkthrough Section */}
       <Wrapper>
-        <section className="md:pt-60 md:pb-60 pt-32 pb-0">
+        <section className="md:pt-20 md:pb-40 pt-32 pb-0">
           <div className=" mx-auto text-center max-w-3xl">
-            <SubTitle>How our service works?</SubTitle>
-            <BodyText>
-              Sagittis nibh scelerisque vitae eget vulputate sem elementum sed
-              neque nisi felis non ultrices massa id egestas quam velit pretium
-              nu.
-            </BodyText>
+            <AnimatePresence>
+              <SubTitle>How our service works?</SubTitle>
+              <BodyText>
+                Sagittis nibh scelerisque vitae eget vulputate sem elementum sed
+                neque nisi felis non ultrices massa id egestas quam velit
+                pretium nu.
+              </BodyText>
+            </AnimatePresence>
           </div>
           <div className="flex lg:flex-row flex-col justify-center gap-10 py-16">
-            <StepCard
-              imageSrc=""
-              alt=""
-              title="1. Schedule online"
-              description="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
-            />
-            <StepCard
-              imageSrc=""
-              alt=""
-              title="2. Pay Online easily"
-              description="Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet at nunc."
-            />
-            <StepCard
-              imageSrc=""
-              alt=""
-              title="3. Get your house cleaned"
-              description="Nunc maecenas sollicitudin metus tellus mattis sed porttitor cursus eleifend."
-            />
+            <AnimatePresence>
+              <StepCard
+                imageSrc=""
+                alt=""
+                title="1. Schedule online"
+                description="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
+              />
+            </AnimatePresence>
+            <AnimatePresence delay={0.2}>
+              <StepCard
+                imageSrc=""
+                alt=""
+                title="2. Pay Online easily"
+                description="Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet at nunc."
+              />
+            </AnimatePresence>
+            <AnimatePresence delay={0.4}>
+              <StepCard
+                imageSrc=""
+                alt=""
+                title="3. Get your house cleaned"
+                description="Nunc maecenas sollicitudin metus tellus mattis sed porttitor cursus eleifend."
+              />
+            </AnimatePresence>
           </div>
-          <div className="flex sm:flex-row flex-col lg:gap-10 gap-4 justify-center">
-             <Link href="/#contact">
-              <Button>Get a free quote</Button>
-            </Link>
-            <Link href="/services">
-              <Button theme="outlined">Explore Services</Button>
-            </Link>
-          </div>
+          <AnimatePresence viewMarginBottom={25}>
+            <div className="flex sm:w-auto w-full sm:flex-row flex-col lg:gap-10 gap-4 justify-center">
+              <Link href="/#contact">
+                <Button>Get a free quote</Button>
+              </Link>
+              <Link href="/services">
+                <Button theme="outlined">Explore Services</Button>
+              </Link>
+            </div>
+          </AnimatePresence>
         </section>
       </Wrapper>
 
       {/* Services Section */}
       <Wrapper>
-        <section className="py-60">
-          <div className="flex-col items-start gap-5 lg:flex lg:flex-row lg:items-end lg:justify-between">
-            <div className="lg:w-1/2 w-full">
-              <SubTitle>Take a look at our professional services</SubTitle>
+        <section className="py-40">
+          <AnimatePresence>
+            <div className="flex-col items-start gap-5 lg:flex lg:flex-row lg:items-end lg:justify-between">
+              <div className="lg:w-1/2 w-full">
+                <SubTitle>Take a look at our professional services</SubTitle>
+              </div>
+              <Link href="/services">
+                <Button theme="outlined">Explore services</Button>
+              </Link>
             </div>
-            <Link href="/services">
-              <Button theme="outlined">Explore services</Button>
-            </Link>
-          </div>
+          </AnimatePresence>
           <div className="gap-10 py-16 flex justify-center flex-wrap">
-            <ServiceCard
-              imgSrc=""
-              imgAlt=""
-              title="Home cleaning"
-              bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
-            />
-            <ServiceCard
-              imgSrc=""
-              imgAlt=""
-              title="Office cleaning"
-              bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
-            />
-            <ServiceCard
-              imgSrc=""
-              imgAlt=""
-              title="Rental cleaning"
-              bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
-            />
+            <AnimatePresence delay={0.2}>
+              <ServiceCard
+                imgSrc=""
+                imgAlt=""
+                title="Home cleaning"
+                bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
+              />
+            </AnimatePresence>
+            <AnimatePresence delay={0.4}>
+              <ServiceCard
+                imgSrc=""
+                imgAlt=""
+                title="Office cleaning"
+                bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
+              />
+            </AnimatePresence>
+            <AnimatePresence delay={0.6}>
+              <ServiceCard
+                imgSrc=""
+                imgAlt=""
+                title="Rental cleaning"
+                bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
+              />
+            </AnimatePresence>
           </div>
         </section>
       </Wrapper>
@@ -110,37 +134,41 @@ export default function Home() {
       {/* Services Details Section */}
       <Wrapper>
         <section className="lg:py-60 pt-0 pb-10 flex lg:flex-row flex-col">
-          <div className="lg:flex-1 object-cover bg-blue-200 lg:w-auto w-full lg:h-auto h-80"></div>
-
-          <div className="flex lg:flex-1 flex-col gap-8 py-6 px-0 xl:pl-36 lg:px-5">
-            <div className="lg:pr-0 md:pr-24 pr-12">
-              <SubTitle>We cover all areas of your home or office</SubTitle>
-
-              <div className="md:pr-24 pr-6">
-                <BodyText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </BodyText>
+          <div className="lg:flex-1 lg:w-auto w-full lg:h-auto h-80 [&>div]:w-full [&>div]:h-full">
+            <AnimatePresence>
+              <div className="w-full h-full bg-blue-200 "></div>
+            </AnimatePresence>
+          </div>
+          <div className="flex lg:flex-1 py-6 px-0 xl:pl-36 lg:px-5">
+            <AnimatePresence>
+              <div className="lg:pr-0 md:pr-24 pr-12 pb-8">
+                <SubTitle>We cover all areas of your home or office</SubTitle>
+                <div className="md:pr-24 pr-6">
+                  <BodyText>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                  </BodyText>
+                </div>
               </div>
-            </div>
 
-            <ul className="w-96 grid grid-cols-2 gap-y-4 gap-x-8 font-semibold text-lg text-gray-800">
-              <ListContainer>Bathrooms</ListContainer>
-              <ListContainer>Bedrooms</ListContainer>
-              <ListContainer>Kitchens</ListContainer>
-              <ListContainer>Offices</ListContainer>
-              <ListContainer>Living Rooms</ListContainer>
-              <ListContainer>Carpets</ListContainer>
-              <ListContainer>Businesses</ListContainer>
-              <ListContainer>Windows</ListContainer>
-            </ul>
+              <ul className="w-96 grid grid-cols-2 gap-y-4 gap-x-8 pb-8 font-semibold text-lg text-gray-800">
+                <ListContainer>Bathrooms</ListContainer>
+                <ListContainer>Bedrooms</ListContainer>
+                <ListContainer>Kitchens</ListContainer>
+                <ListContainer>Offices</ListContainer>
+                <ListContainer>Living Rooms</ListContainer>
+                <ListContainer>Carpets</ListContainer>
+                <ListContainer>Businesses</ListContainer>
+                <ListContainer>Windows</ListContainer>
+              </ul>
 
-            <div className="w-48">
-              <Link href="/#contact">
-                <Button>Get a free quote</Button>
-              </Link>
-            </div>
+              <div className="w-48 pb-8">
+                <Link href="/#contact">
+                  <Button>Get a free quote</Button>
+                </Link>
+              </div>
+            </AnimatePresence>
           </div>
         </section>
       </Wrapper>
@@ -148,10 +176,8 @@ export default function Home() {
       {/* Contact Section */}
       <section className="bg-[#F7F9FC]">
         <Wrapper>
-
-           <div className="lg:py-60 py-32 block xl:flex">
+          <div className="lg:py-60 py-32 block xl:flex">
             <div id="contact" className="flex-1 xl:pr-28 pr-0 pt-16">
-
               <div className="[&>h2]:leading-tight">
                 <SubTitle>Request a free cleaning quote today</SubTitle>
               </div>

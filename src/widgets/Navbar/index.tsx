@@ -13,7 +13,7 @@ export default function Navbar() {
   const [isScrollDirectionDown, resetScrollDirection] = useScrollDirection();
 
   return (
-    <div className="fixed w-full">
+    <div className="fixed w-full bg-white z-50">
       <nav
         className={`bg-white w-full shadow fixed transition-all ${
           isScrollDirectionDown && !activeHamburger ? '-translate-y-20' : null
