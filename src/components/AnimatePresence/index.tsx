@@ -1,18 +1,19 @@
-'use client';
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+"use client";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 interface IAnimatePresence {
   delay?: number;
   viewMarginBottom?: number;
   children?: any;
+  isFull?: boolean;
 }
 
 export default function AnimatePresence(props: IAnimatePresence) {
   return (
     <motion.div
-      initial={'hidden'}
-      whileInView={'visible'}
+      initial={"hidden"}
+      whileInView={"visible"}
       viewport={{
         once: true,
         margin: `0px 0px -${
@@ -24,6 +25,7 @@ export default function AnimatePresence(props: IAnimatePresence) {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 60 },
       }}
+      style={props.isFull ? { height: "100%", width: "100%" } : {}}
     >
       {props.children}
     </motion.div>
