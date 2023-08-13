@@ -12,7 +12,7 @@ export default function StatCard(props: IStatCard) {
         {/* Icon Container */}
         <div className="w-24 h-24 mr-4">
           <img src={props.icon} alt="" />
-          <div className="w-full h-full bg-blue-300" />
+          <div className="min-w-full min-h-full bg-blue-300" />
         </div>
 
         {/* Text Container*/}

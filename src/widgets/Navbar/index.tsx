@@ -6,6 +6,7 @@ import NavLink from './NavLink';
 import Wrapper from '@/components/Wrapper';
 import { useState } from 'react';
 import useScrollDirection from '@/hooks/useScrollDirection';
+import { motion } from 'framer-motion';
 
 export default function Navbar() {
   const [activeHamburger, setActiveHamburger] = useState(false);
@@ -13,7 +14,12 @@ export default function Navbar() {
   const [isScrollDirectionDown, resetScrollDirection] = useScrollDirection();
 
   return (
-    <div className="fixed w-full">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      viewport={{ once: true }}
+      className="fixed w-full bg-white z-50"
+    >
       <nav
         className={`bg-white w-full shadow fixed transition-all ${
           isScrollDirectionDown && !activeHamburger ? '-translate-y-20' : null
@@ -120,6 +126,6 @@ export default function Navbar() {
           </div>
         </Wrapper>
       </nav>
-    </div>
+    </motion.div>
   );
 }
