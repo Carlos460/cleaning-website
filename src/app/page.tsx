@@ -51,7 +51,7 @@ export default function Home() {
             </AnimatePresence>
           </div>
           <div className="flex lg:flex-row flex-col justify-center gap-10 py-16">
-            <AnimatePresence>
+            <AnimatePresence delay={0.2}>
               <StepCard
                 imageSrc=""
                 alt=""
@@ -59,7 +59,7 @@ export default function Home() {
                 description="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
               />
             </AnimatePresence>
-            <AnimatePresence delay={0.2}>
+            <AnimatePresence delay={0.4}>
               <StepCard
                 imageSrc=""
                 alt=""
@@ -67,7 +67,7 @@ export default function Home() {
                 description="Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet at nunc."
               />
             </AnimatePresence>
-            <AnimatePresence delay={0.4}>
+            <AnimatePresence delay={0.6}>
               <StepCard
                 imageSrc=""
                 alt=""
@@ -102,7 +102,7 @@ export default function Home() {
               </Link>
             </div>
           </AnimatePresence>
-          <div className="gap-10 py-16 flex justify-center flex-wrap">
+          <div className="gap-10 pb-16 flex justify-center flex-wrap">
             <AnimatePresence delay={0.2}>
               <ServiceCard
                 imgSrc=""
@@ -133,9 +133,9 @@ export default function Home() {
 
       {/* Services Details Section */}
       <Wrapper>
-        <section className="lg:py-60 pt-0 pb-10 flex lg:flex-row flex-col">
+        <section className="lg:py-20 pt-0 pb-10 flex lg:flex-row flex-col">
           <div className="lg:flex-1 lg:w-auto w-full lg:h-auto h-80 [&>div]:w-full [&>div]:h-full">
-            <AnimatePresence>
+            <AnimatePresence delay={0.2}>
               <div className="w-full h-full bg-blue-200 "></div>
             </AnimatePresence>
           </div>
@@ -178,58 +178,64 @@ export default function Home() {
         <Wrapper>
           <div className="lg:py-60 py-32 block xl:flex">
             <div id="contact" className="flex-1 xl:pr-28 pr-0 pt-16">
-              <div className="[&>h2]:leading-tight">
-                <SubTitle>Request a free cleaning quote today</SubTitle>
-              </div>
-              <BodyText>
-                In dignissim euismod pretium amet enim a eu nam ut urna accumsan
-                pellentesque lacus duis pharetra eutortor.
-              </BodyText>
-              <div className="flex py-10 mb-10 border-b">
-                <div className=" rounded-full bg-blue-200 w-20 h-20"></div>
-                <div className="ml-4 flex flex-col justify-center">
-                  <p className="font-normal text-gray-500">CALL US NOW</p>
-                  <p className="font-semibold text-3xl">(202)452-2932</p>
+              <AnimatePresence>
+                <div className="[&>h2]:leading-tight">
+                  <SubTitle>Request a free cleaning quote today</SubTitle>
                 </div>
-              </div>
-              <p className="font-semibold text-2xl mb-2">Not convinced yet?</p>
-              <BodyText>
-                Massa bibendum consectetur maurisid gravida purus, dolor dui
-                amet morbi non nunc urna purus diam.
-              </BodyText>
-              <div className="pt-5 pb-20">
-                <Link href="/services">
-                  <Button theme="outlined">Browse our packages</Button>
-                </Link>
-              </div>
+                <BodyText>
+                  In dignissim euismod pretium amet enim a eu nam ut urna
+                  accumsan pellentesque lacus duis pharetra eutortor.
+                </BodyText>
+                <div className="flex py-10 mb-10 border-b">
+                  <div className=" rounded-full bg-blue-200 w-20 h-20"></div>
+                  <div className="ml-4 flex flex-col justify-center">
+                    <p className="font-normal text-gray-500">CALL US NOW</p>
+                    <p className="font-semibold text-3xl">(202)452-2932</p>
+                  </div>
+                </div>
+                <p className="font-semibold text-2xl mb-2">
+                  Not convinced yet?
+                </p>
+                <BodyText>
+                  Massa bibendum consectetur maurisid gravida purus, dolor dui
+                  amet morbi non nunc urna purus diam.
+                </BodyText>
+                <div className="pt-5 pb-20">
+                  <Link href="/services">
+                    <Button theme="outlined">Browse our packages</Button>
+                  </Link>
+                </div>
+              </AnimatePresence>
             </div>
-            <div className="flex-1 mx-auto xl:mx-0 max-w-2xl shadow-lg rounded-2xl md:p-10 p-8 my-10 bg-white lg:my-0">
-              <form className="flex flex-col gap-5">
-                <div className="grid md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-8">
-                  <InputField placeholder="John Doe" fieldName="Full name" />
-                  <InputField
-                    placeholder="(000)000-0000"
-                    fieldName="Phone number"
-                  />
-                  <InputField
-                    placeholder="123 Cleaning Lane, NY"
-                    fieldName="Address"
-                  />
-                  <InputField placeholder="john@doe.com" fieldName="Email" />
-                  <InputField
-                    placeholder="Full cleaning"
-                    fieldName="Request service"
-                  />
-                  <InputField
-                    placeholder="May 17, 2023"
-                    fieldName="Day of service"
-                  />
-                </div>
-                <TextArea fieldName="Add a note"></TextArea>
-                <div className="md:w-60 w-full">
-                  <SubmitButton text="Submit message" />
-                </div>
-              </form>
+            <div className="flex-1 mx-auto xl:mx-0 max-w-2xl">
+              <AnimatePresence delay={0.2}>
+                <form className="flex flex-col gap-5 shadow-lg rounded-2xl md:p-10 p-8 my-10 bg-white lg:my-0">
+                  <div className="grid md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-8">
+                    <InputField placeholder="John Doe" fieldName="Full name" />
+                    <InputField
+                      placeholder="(000)000-0000"
+                      fieldName="Phone number"
+                    />
+                    <InputField
+                      placeholder="123 Cleaning Lane, NY"
+                      fieldName="Address"
+                    />
+                    <InputField placeholder="john@doe.com" fieldName="Email" />
+                    <InputField
+                      placeholder="Full cleaning"
+                      fieldName="Request service"
+                    />
+                    <InputField
+                      placeholder="May 17, 2023"
+                      fieldName="Day of service"
+                    />
+                  </div>
+                  <TextArea fieldName="Add a note"></TextArea>
+                  <div className="md:w-60 w-full">
+                    <SubmitButton text="Submit Request" />
+                  </div>
+                </form>
+              </AnimatePresence>
             </div>
           </div>
         </Wrapper>
