@@ -1,13 +1,14 @@
-import Wrapper from "@/components/Wrapper";
-import Button from "@/components/Button";
-import { BodyText, SubTitle, Title } from "@/components/Typography";
+import Wrapper from '@/components/Wrapper';
+import Button from '@/components/Button';
+import { BodyText, SubTitle, Title } from '@/components/Typography';
 
-import StatCard from "@/widgets/StatisticCard";
+import StatCard from '@/widgets/StatisticCard';
 
-import TeamCard from "@/widgets/TeamCard";
-import ListContainer from "@/components/DetailList";
-import ValueCard from "@/widgets/ValueCard";
-import AnimatePresence from "@/components/AnimatePresence";
+import TeamCard from '@/widgets/TeamCard';
+import ListContainer from '@/components/DetailList';
+import ValueCard from '@/widgets/ValueCard';
+import AnimatePresence from '@/components/AnimatePresence';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -15,12 +16,10 @@ export default function About() {
       {/* Hero Section */}
       <section className="flex flex-col border-b-2">
         <Wrapper>
-          <header className="pt-32 flex justify-center flex-col text-center">
-            <text className="text-6xl font-semibold mb-4 pt-20">
-              <AnimatePresence>
-                <div>About our company</div>
-              </AnimatePresence>
-            </text>
+          <header className=" pt-44 flex justify-center flex-col text-center">
+            <AnimatePresence>
+              <Title>About our company</Title>
+            </AnimatePresence>
             <div className="h-16 max-w-3xl m-auto text-center">
               <AnimatePresence>
                 <BodyText>
@@ -34,7 +33,7 @@ export default function About() {
 
           {/* Header Image Container */}
           <AnimatePresence>
-            <div className="bg-blue-300 h-[700px]"></div>
+            <div className="bg-blue-300 mt-5 h-[700px]"></div>
           </AnimatePresence>
         </Wrapper>
       </section>
@@ -186,10 +185,14 @@ export default function About() {
           <div>
             <div className="flex gap-10 justify-center">
               <AnimatePresence delay={0.02}>
-                <Button>Get a free quote</Button>
+                <Link href={'/#contact'}>
+                  <Button>Get a free quote</Button>
+                </Link>
               </AnimatePresence>
               <AnimatePresence delay={0.04}>
-                <Button theme="outlined">Explore Services</Button>
+                <Link href={'/services'}>
+                  <Button theme="outlined">Explore Services</Button>
+                </Link>
               </AnimatePresence>
             </div>
           </div>

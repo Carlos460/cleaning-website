@@ -1,21 +1,21 @@
-import Wrapper from "@/components/Wrapper";
-import PricingCard from "@/widgets/PricingCard";
-import { BodyText, SubTitle, Title } from "@/components/Typography";
-import ReviewCard from "@/widgets/ReviewCard";
-import Link from "next/link";
-import AnimatePresence from "@/components/AnimatePresence";
+import Wrapper from '@/components/Wrapper';
+import PricingCard from '@/widgets/PricingCard';
+import { BodyText, SubTitle, Title } from '@/components/Typography';
+import ReviewCard from '@/widgets/ReviewCard';
+import Link from 'next/link';
+import AnimatePresence from '@/components/AnimatePresence';
 export default function Services() {
   return (
     <>
       {/* Pricing Section */}
       <Wrapper>
-        <section className="pt-24">
+        <section className="pt-44">
           {/* Header Text*/}
           <div className="md:container md:mx-auto">
             <AnimatePresence>
-              <div className="text-center mg-bottom-40px pt-28">
+              <div className="text-center">
                 <Title>Pricing</Title>
-                <div className="max-w-lg mx-auto">
+                <div className="max-w-lg mx-auto mb-0">
                   <BodyText>
                     Condimentum mauris sit cursus amet id non neque pharetra
                     nulla ornare sed facilisis senectus dapibus nibh
@@ -26,7 +26,7 @@ export default function Services() {
           </div>
 
           {/* Price Card Container */}
-          <div className="gap-10 py-16 flex lg:px-0 px-24 lg:flex-row flex-col justify-center text-left">
+          <div className="gap-10 py-16 flex lg:flex-row flex-col justify-center">
             <AnimatePresence>
               <Link href="/#contact">
                 <PricingCard

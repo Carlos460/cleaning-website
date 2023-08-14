@@ -1,6 +1,6 @@
 export function Title(props: any) {
   return (
-    <h1 className="sm:text-6xl text-3xl font-bold text-gray-800 sm:mb-8 mb-4">
+    <h1 className="sm:text-6xl text-3xl font-bold text-gray-800 mb-2">
       {props.children}
     </h1>
   );

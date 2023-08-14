@@ -78,10 +78,10 @@ export default function Home() {
           </div>
           <AnimatePresence viewMarginBottom={25}>
             <div className="flex sm:w-auto w-full sm:flex-row flex-col lg:gap-10 gap-4 justify-center">
-              <Link href="/#contact">
+              <Link href="/#contact" className="[&>button]:w-full">
                 <Button>Get a free quote</Button>
               </Link>
-              <Link href="/services">
+              <Link href="/services" className="[&>button]:w-full">
                 <Button theme="outlined">Explore Services</Button>
               </Link>
             </div>

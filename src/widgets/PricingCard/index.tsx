@@ -1,7 +1,7 @@
-import { Details } from "@/components/Typography";
-import Image from "next/image";
-import { DetailList } from "@/components/DetailList";
-import Link from "next/link";
+import { Details } from '@/components/Typography';
+import Image from 'next/image';
+import { DetailList } from '@/components/DetailList';
+
 interface IPricingCard {
   imageSrc: string;
   alt: string;
@@ -20,8 +20,8 @@ interface IPricingCard {
 export default function PricingCard(props: IPricingCard) {
   return (
     <div
-      className={`gap-5 flex-col flex pt-20 px-10 pb-8 border-1 rounded-2xl shadow-lg cursor-pointer hover:-translate-y-5 duration-300 ${
-        props.outline ? "border-blue-600 border-2 border-solid" : ""
+      className={` max-w-lg gap-5 flex-col flex pt-20 px-10 pb-8 border-1 rounded-2xl shadow-lg cursor-pointer hover:-translate-y-5 duration-300 ${
+        props.outline ? 'border-blue-600 border-2 border-solid' : ''
       }`}
     >
       <div>
@@ -60,7 +60,7 @@ export default function PricingCard(props: IPricingCard) {
       </div>
 
       <div>
-        {props.buttonTheme === "grey" ? (
+        {props.buttonTheme === 'grey' ? (
           <div className="bg-gray-100 shadow border-2 border-gray-200 min-w-full py-4 rounded-xl mt-auto">
             <p className="text-gray-700 font-normal text-center">Learn more</p>
           </div>

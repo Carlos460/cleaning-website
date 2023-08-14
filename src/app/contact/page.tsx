@@ -1,9 +1,9 @@
-import { InputField, SubmitButton, TextArea } from "@/components/Form";
-import { BodyText, SubTitle, Title } from "@/components/Typography";
-import Wrapper from "@/components/Wrapper";
-import ReachCard from "@/widgets/ReachCard";
-import DropDownInfo from "@/components/DropDownInfo";
-import AnimatePresence from "@/components/AnimatePresence";
+import { InputField, SubmitButton, TextArea } from '@/components/Form';
+import { BodyText, SubTitle, Title } from '@/components/Typography';
+import Wrapper from '@/components/Wrapper';
+import ReachCard from '@/widgets/ReachCard';
+import DropDownInfo from '@/components/DropDownInfo';
+import AnimatePresence from '@/components/AnimatePresence';
 
 export default function Contact() {
   return (

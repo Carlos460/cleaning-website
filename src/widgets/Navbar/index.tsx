@@ -46,7 +46,9 @@ export default function Navbar() {
                   <Link href={'/contact'}>Contact</Link>
                 </NavLink>
               </ul>
-              <Button>Get a free quote</Button>
+              <Link href={'/#contact'}>
+                <Button>Get a free quote</Button>
+              </Link>
             </div>
           </div>
 
@@ -73,13 +75,21 @@ export default function Navbar() {
               <Link href={'/contact'} onClick={() => setActiveHamburger(false)}>
                 <NavLink>Contact</NavLink>
               </Link>
-              <Button>Get Started</Button>
+              <Link
+                href={'/#contact'}
+                onClick={() => {
+                  resetScrollDirection();
+                  setActiveHamburger(false);
+                }}
+              >
+                <Button>Get a free quote</Button>
+              </Link>
             </ul>
           </div>
           <div
             onClick={() => {
-              setActiveHamburger(false);
               resetScrollDirection();
+              setActiveHamburger(false);
             }}
             className={`absolute z-10 top-0 left-0 w-screen h-screen bg-black cursor-pointer transition-all duration-500 ${
               activeHamburger ? 'opacity-25' : 'opacity-0 pointer-events-none'
