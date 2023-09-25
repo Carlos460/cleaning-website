@@ -18,17 +18,20 @@ export default function About() {
         <Wrapper>
           <header className=" pt-44 flex justify-center flex-col text-center">
             <AnimatePresence>
-              <Title>About our company</Title>
+              <Title>About Us</Title>
             </AnimatePresence>
+
             <div className="h-16 max-w-3xl m-auto text-center">
               <AnimatePresence>
                 <BodyText>
-                  Condimentum mauris sit cursus amet id non neque pharetra nulla
-                  ornare sed facilisis senectus dapibus nibh ultrices eget
-                  suscipit aliquet et nulla magna.
+                  Experience unmatched laundry confidence with our guarantee: if you're not fully satisfied with the cleanliness and care of your clothes, 
+                  we'll rewash them for free.
+
                 </BodyText>
               </AnimatePresence>
             </div>
+
+
           </header>
 
           {/* Header Image Container */}
@@ -46,30 +49,29 @@ export default function About() {
             <AnimatePresence>
               <StatCard
                 icon="test"
-                number={3000}
-                plus="+"
-                subtext="HAPPY CLIENTS"
+                number={20}
+                subtext="Drying Machines"
               />
             </AnimatePresence>
           </div>
           <div className="mb-4 md:mb-0">
             <AnimatePresence delay={0.1}>
-              <StatCard icon="test" number={100} plus="+" subtext="EMPLOYEES" />
+              <StatCard icon="test" number={21} subtext="Washing Machines" />
             </AnimatePresence>
           </div>
           <div className="mb-4 md:mb-0">
             <AnimatePresence delay={0.2}>
               <StatCard
                 icon="test"
-                number={5000}
-                plus="+"
-                subtext="JOBS DONE"
+                number={10000}
+                sign="+"
+                subtext="Dry Cleaned Items"
               />
             </AnimatePresence>
           </div>
           <div>
             <AnimatePresence delay={0.3}>
-              <StatCard icon="test" number={2023} subtext="FOUNDED IN" />
+              <StatCard icon="test" number={100} subtext="Happy Customers" sign="%"/>
             </AnimatePresence>
           </div>
         </div>
@@ -90,24 +92,22 @@ export default function About() {
           {/* Equipment Content Section */}
           <div className="flex-1">
             <AnimatePresence>
-              <SubTitle>We have the best staff & equipment</SubTitle>
+              <SubTitle>Who We Are</SubTitle>
+              <h2>MORE THAN 10 YEARS OF EXPERIENCE</h2>
               <div className="pt-4 pb-10">
                 <BodyText>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur duis aute irure dolor
-                  in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur
+                  Welcome to our laundry services! We offer top-quality laundry services to ensure your clothes are clean, fresh and ready for wear. Our services 
+                  include both wash and fold as well as dry cleaning for all types of garments, including delicate fabrics such as silk, wool and cashmere. Our team 
+                  of expert cleaners are trained to handle all types of fabrics and stains, and use only the highest quality cleaning products to ensure that your 
+                  clothes are not only clean, but also well-maintained. We take great care to follow any special instructions you may have, such as using certain 
+                  detergents or fabric softeners, and we always handle your clothes with the utmost care and attention.
                 </BodyText>
               </div>
               <ul className="w-auto grid grid-cols-2 gap-y-6 font-semibold text-lg text-gray-800">
-                <ListContainer>Window Cleaner</ListContainer>
-                <ListContainer>Carpet Cleaner</ListContainer>
-                <ListContainer>Work Vans</ListContainer>
-                <ListContainer>Floor Polsiher</ListContainer>
-                <ListContainer>Microfiber</ListContainer>
-                <ListContainer>Sanaitizer</ListContainer>
-                <ListContainer>Water Jet Cleaner</ListContainer>
-                <ListContainer>Steam Cleaner</ListContainer>
+                <ListContainer>100% Customer Satisfaction</ListContainer>
+                <ListContainer>Free Collection & Delivery</ListContainer>
+                <ListContainer>Affordable Prices</ListContainer>
+                <ListContainer>Best Quality</ListContainer>
               </ul>
             </AnimatePresence>
           </div>
@@ -120,30 +120,13 @@ export default function About() {
           <AnimatePresence>
             <div className="flex lg:flex-row flex-col justify-between mb-10">
               <SubTitle>Our Values</SubTitle>
-              <div className="max-w-lg">
-                <BodyText>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor amet.
-                </BodyText>
-              </div>
             </div>
           </AnimatePresence>
           <AnimatePresence>
             <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-6">
-              <ValueCard
-                title="Transparency"
-                body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
-              />
+
               <ValueCard
                 title="Responsibility"
-                body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
-              />
-              <ValueCard
-                title="Security"
-                body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
-              />
-              <ValueCard
-                title="Trust"
                 body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
               />
               <ValueCard
@@ -154,6 +137,7 @@ export default function About() {
                 title="Puntuality"
                 body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
               />
+
             </div>
           </AnimatePresence>
         </section>
@@ -174,19 +158,16 @@ export default function About() {
           </AnimatePresence>
           <AnimatePresence>
             <div className="gap-10 py-16 flex justify-center flex-wrap">
-              <TeamCard name="John Carter" jobTitle="HOUSE CLEANER" />
-              <TeamCard name="Sophie Moore" jobTitle="OFFICE CLEANER" />
-              <TeamCard name="Matt Cannon" jobTitle="INDUSTRIAL CLEANER" />
-              <TeamCard name="Andy Smith" jobTitle="OFFICE CLEANER" />
-              <TeamCard name="Patrick Meyer" jobTitle="INDUSTRIAL CLEANER" />
-              <TeamCard name="Lily Woods" jobTitle="HOUSE CLEANER" />
+              <TeamCard name="Philip Camu" jobTitle="LAUNDROMAT EXPERT " />
+              <TeamCard name="Philip Camu" jobTitle="LAUNDROMAT EXPERT " />
+              <TeamCard name="Philip Camu" jobTitle="LAUNDROMAT EXPERT " />
             </div>
           </AnimatePresence>
           <div>
             <div className="flex gap-10 justify-center">
               <AnimatePresence delay={0.02}>
                 <Link href={'/#contact'}>
-                  <Button>Get a free quote</Button>
+                  <Button>Schedule</Button>
                 </Link>
               </AnimatePresence>
               <AnimatePresence delay={0.04}>

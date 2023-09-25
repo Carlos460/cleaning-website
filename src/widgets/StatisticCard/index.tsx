@@ -2,7 +2,7 @@ interface IStatCard {
   number: number;
   icon: string;
   subtext: string;
-  plus?: string;
+  sign?: string;
 }
 
 export default function StatCard(props: IStatCard) {
@@ -12,14 +12,14 @@ export default function StatCard(props: IStatCard) {
         {/* Icon Container */}
         <div className="w-24 h-24 mr-4">
           <img src={props.icon} alt="" />
-          <div className="min-w-full min-h-full bg-blue-300" />
+          <div className="min-w-full min-h-full bg-blue-300 rounded-full" />
         </div>
 
         {/* Text Container*/}
-        <div className="flex flex-col">
-          <text className="text-5xl mb-2 text-start font-semibold">
+        <div className="flex flex-col m-auto">
+          <text className="text-4xl mb-2 text-start font-semibold">
             {props.number}
-            {props.plus}
+            {props.sign}
           </text>
           <text className="text-base text-gray-500">{props.subtext}</text>
         </div>
