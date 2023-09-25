@@ -1,9 +1,9 @@
-import Wrapper from '@/components/Wrapper';
-import PricingCard from '@/widgets/PricingCard';
-import { BodyText, SubTitle, Title } from '@/components/Typography';
-import ReviewCard from '@/widgets/ReviewCard';
-import Link from 'next/link';
-import AnimatePresence from '@/components/AnimatePresence';
+import Wrapper from "@/components/Wrapper";
+import PricingCard from "@/widgets/PricingCard";
+import { BodyText, SubTitle, Title } from "@/components/Typography";
+import ReviewCard from "@/widgets/ReviewCard";
+import Link from "next/link";
+import AnimatePresence from "@/components/AnimatePresence";
 export default function Services() {
   return (
     <>
@@ -17,8 +17,9 @@ export default function Services() {
                 <Title>Pricing</Title>
                 <div className="max-w-lg mx-auto mb-0">
                   <BodyText>
-                    Condimentum mauris sit cursus amet id non neque pharetra
-                    nulla ornare sed facilisis senectus dapibus nibh
+                    Since 2000, E-Z Laundry Cleaners has provided quality
+                    services to clients by providing them with the professional
+                    care they deserve.
                   </BodyText>
                 </div>
               </div>
@@ -32,14 +33,15 @@ export default function Services() {
                 <PricingCard
                   imageSrc=""
                   alt=""
-                  title="BASIC"
+                  title="Pressing & Dry Cleaning"
                   pricing="$100 USD"
-                  description="Condimentum mauris sit cursus amet id non neque pharetra nulla
-              ornare sed facilisis senectus dapibus nibh"
+                  description="Experience convenience with our laundry app, 
+                  delivering specialized dry cleaning and professional pressing 
+                  services to keep your garments sharp, fresh, and impeccable for any occasion."
                   details="What's included?"
-                  sqft="Up to 1500 sqft"
-                  hours="4 hours"
-                  task="Up to 2 cleaning task"
+                  sqft="Choice of dry cleaning or professional pressing services"
+                  hours="Specialized stain and odor removal"
+                  task="Convenient pickup and delivery options"
                   buttonTheme="grey"
                 />
               </Link>
@@ -49,14 +51,14 @@ export default function Services() {
                 <PricingCard
                   imageSrc=""
                   alt=""
-                  title="STANDARD"
+                  title="Alterations"
                   pricing="$149 USD"
-                  description="Condimentum mauris sit cursus amet id non neque pharetra nulla
-              ornare sed facilisis senectus dapibus nibh"
+                  description="Our skilled tailors specialize in customizing garment fit through services 
+                  like hemming and seam adjustments, ensuring a perfect fit and refined look for each piece."
                   details="What's included?"
-                  sqft="Up to 2500 sqft"
-                  hours="6 hours"
-                  task="Up to 4 cleaning task"
+                  sqft="Handling of diverse types of garments"
+                  hours="Hemming, seam, and length adjustments"
+                  task="Experienced tailors' expertise"
                   buttonTheme="grey"
                 />
               </Link>
@@ -67,15 +69,15 @@ export default function Services() {
                 <PricingCard
                   imageSrc=""
                   alt=""
-                  title="DELUXE"
-                  pricing="$299 USD"
-                  description="Condimentum mauris sit cursus amet id non neque pharetra nulla
-              ornare sed facilisis senectus dapibus nibh"
+                  title="Special Requests"
+                  pricing="TBD"
+                  description="Our laundry app accommodates special requests, ensuring careful handling of oversized or 
+                  delicate items like comforters and silk by our professional launderers."
                   details="What's included?"
-                  sqft="Up to 2500 sqft"
-                  hours="12 hours"
-                  task="Up to 10 cleaning task"
-                  outline={true}
+                  sqft="Care for delicate fabrics like silk and lace"
+                  hours="Handling oversized items like comforters and blankets"
+                  task="Hand washing options"
+                  buttonTheme="grey"
                 />
               </Link>
             </AnimatePresence>
@@ -118,17 +120,17 @@ export default function Services() {
           <div className="flex lg:flex-row flex-col gap-10">
             <AnimatePresence>
               <ReviewCard
-                quote="“Condimentum mauris sit cursus amet id non neque pharetra nulla ornare sed dolorol facilisis senectus dolor conse.”"
-                name="Micheal Jackson"
-                location="New York City"
+                quote="“Great service! Laundry was returned clean, nicely folded, and according to my requests. On time and friendly delivery. Highly recommended!”"
+                name="Yael Yisraeli"
+                location="Service"
               />
             </AnimatePresence>
 
             <AnimatePresence>
               <ReviewCard
-                quote="“Condimentum mauris sit cursus amet id non neque pharetra nulla ornare sed dolorol facilisis senectus dolor conse.”"
-                name="Emily Smith"
-                location="Miami"
+                quote="“Great place to get dry cleaning done. Staff is kind and respectful. Been with them for years...had our home drier break once for months. we didn't have issues with drying our washed clothing there.”"
+                name="Samar k Said"
+                location="Atmopshere"
               />
             </AnimatePresence>
           </div>
