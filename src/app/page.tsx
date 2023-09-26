@@ -18,14 +18,15 @@ export default function Home() {
           <div className="lg:flex-1">
             <AnimatePresence>
               <Title className="text-6xl font-bold text-gray-800 mb-8">
-                Reliable cleaning services for your home
+                Saving the earth one borough at a time
               </Title>
-              <p className="sm:text-xl text-sm  text-gray-600 mb-8">
-                Full of experience and good references cleaning apartments,
-                homes, and offices!
+              <p className="sm:text-xl text-sm text-gray-600 mb-8">
+                Since 2000, E-Z Laundry Cleaners has provided quality services
+                to clients by providing them with the professional care they
+                deserve.
               </p>
               <Link href="/#contact">
-                <Button>Get a free quote</Button>
+                <Button>Schedule a Service</Button>
               </Link>
             </AnimatePresence>
           </div>
@@ -44,9 +45,9 @@ export default function Home() {
             <AnimatePresence>
               <SubTitle>How our service works?</SubTitle>
               <BodyText>
-                Sagittis nibh scelerisque vitae eget vulputate sem elementum sed
-                neque nisi felis non ultrices massa id egestas quam velit
-                pretium nu.
+                {`Experience laundry luxury at your doorstep with EZ Laundry's
+                pickup and delivery service - where convenience meets pristine
+                freshness.`}
               </BodyText>
             </AnimatePresence>
           </div>
@@ -56,30 +57,30 @@ export default function Home() {
                 imageSrc=""
                 alt=""
                 title="1. Schedule online"
-                description="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
+                description="Schedule a pick up date and time online or by call to have a driver collect your laundry"
               />
             </AnimatePresence>
             <AnimatePresence delay={0.4}>
               <StepCard
                 imageSrc=""
                 alt=""
-                title="2. Pay Online easily"
-                description="Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet at nunc."
+                title="2. Wash & Dry"
+                description="Our staff will wash and dry your clothes using the best quality detergents."
               />
             </AnimatePresence>
             <AnimatePresence delay={0.6}>
               <StepCard
                 imageSrc=""
                 alt=""
-                title="3. Get your house cleaned"
-                description="Nunc maecenas sollicitudin metus tellus mattis sed porttitor cursus eleifend."
+                title="3. Delivery"
+                description="Laundry is folded and packed neatly ready to be deliver back to your door!"
               />
             </AnimatePresence>
           </div>
           <AnimatePresence viewMarginBottom={25}>
             <div className="flex sm:w-auto w-full sm:flex-row flex-col lg:gap-10 gap-4 justify-center">
               <Link href="/#contact" className="[&>button]:w-full">
-                <Button>Get a free quote</Button>
+                <Button>Schedule a Service</Button>
               </Link>
               <Link href="/services" className="[&>button]:w-full">
                 <Button theme="outlined">Explore Services</Button>
@@ -107,7 +108,7 @@ export default function Home() {
               <ServiceCard
                 imgSrc=""
                 imgAlt=""
-                title="Home cleaning"
+                title="Self Service"
                 bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
               />
             </AnimatePresence>
@@ -115,7 +116,7 @@ export default function Home() {
               <ServiceCard
                 imgSrc=""
                 imgAlt=""
-                title="Office cleaning"
+                title="Dry Cleaning"
                 bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
               />
             </AnimatePresence>
@@ -123,7 +124,7 @@ export default function Home() {
               <ServiceCard
                 imgSrc=""
                 imgAlt=""
-                title="Rental cleaning"
+                title="Pick up and Delivery"
                 bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
               />
             </AnimatePresence>
@@ -133,34 +134,35 @@ export default function Home() {
 
       {/* Services Details Section */}
       <Wrapper>
-        <section className="lg:py-20 pt-0 pb-10 flex lg:flex-row flex-col">
+        <section className="lg:py-20 pt-0 pb-10 flex lg:flex-row flex-col gap-10">
           <div className="lg:flex-1 lg:w-auto w-full lg:h-auto h-80 [&>div]:w-full [&>div]:h-full">
             <AnimatePresence delay={0.2}>
               <div className="w-full h-full bg-blue-200 "></div>
             </AnimatePresence>
           </div>
-          <div className="flex lg:flex-1 py-6 px-0 xl:pl-36 lg:px-5">
+          <div className="flex lg:flex-1">
             <AnimatePresence>
-              <div className="lg:pr-0 md:pr-24 pr-12 pb-8">
-                <SubTitle>We cover all areas of your home or office</SubTitle>
+              <div className="lg:pr-0 md:pr-24 pr-12 pb-5">
+                <SubTitle>
+                  We take care of all types of fabric and stains
+                </SubTitle>
                 <div className="md:pr-24 pr-6">
                   <BodyText>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
+                    Experience the ultimate convenience and care for your
+                    laundry at our top-tier laundry mat cleaning service, where
+                    we meticulously handle every load to ensure your clothes are
+                    clean, fresh, and perfectly cared for.
                   </BodyText>
                 </div>
               </div>
 
-              <ul className="w-96 grid grid-cols-2 gap-y-4 gap-x-8 pb-8 font-semibold text-lg text-gray-800">
-                <ListContainer>Bathrooms</ListContainer>
-                <ListContainer>Bedrooms</ListContainer>
-                <ListContainer>Kitchens</ListContainer>
-                <ListContainer>Offices</ListContainer>
-                <ListContainer>Living Rooms</ListContainer>
-                <ListContainer>Carpets</ListContainer>
-                <ListContainer>Businesses</ListContainer>
-                <ListContainer>Windows</ListContainer>
+              <ul className="w-full h-auto grid grid-cols-2 gap-y-4 gap-x-4 mb-8 font-semibold text-lg text-gray-800">
+                <ListContainer>Fabric Type and Care Labels</ListContainer>
+                <ListContainer>Sorting</ListContainer>
+                <ListContainer>Pre-treatment of Stains</ListContainer>
+                <ListContainer>Detergent Selection</ListContainer>
+                <ListContainer>Gentle Handling</ListContainer>
+                <ListContainer>Ironing and Steaming</ListContainer>
               </ul>
 
               <div className="w-48 pb-8">
@@ -180,7 +182,9 @@ export default function Home() {
             <div id="contact" className="flex-1 xl:pr-28 pr-0 pt-16">
               <AnimatePresence>
                 <div className="[&>h2]:leading-tight">
-                  <SubTitle>Request a free cleaning quote today</SubTitle>
+                  <SubTitle>
+                    Request a free laundry cleaning quote today
+                  </SubTitle>
                 </div>
                 <BodyText>
                   In dignissim euismod pretium amet enim a eu nam ut urna
@@ -222,7 +226,7 @@ export default function Home() {
                     />
                     <InputField placeholder="john@doe.com" fieldName="Email" />
                     <InputField
-                      placeholder="Full cleaning"
+                      placeholder="Dry Cleaning"
                       fieldName="Request service"
                     />
                     <InputField

@@ -29,7 +29,7 @@ export default function Navbar() {
           {/* desktop size sceen */}
           <div className="lg:flex hidden justify-between py-3">
             <div className="flex items-center">
-              <h1 className="font-medium text-4xl">Brand</h1>
+              <h1 className="font-medium text-4xl">Ez-Laundry</h1>
             </div>
             <div className="flex gap-x-10">
               <ul className="flex gap-x-10 items-center">
@@ -47,7 +47,7 @@ export default function Navbar() {
                 </NavLink>
               </ul>
               <Link href={'/#contact'}>
-                <Button>Get a free quote</Button>
+                <Button>Schedule a Service</Button>
               </Link>
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function Navbar() {
                   setActiveHamburger(false);
                 }}
               >
-                <Button>Get a free quote</Button>
+                <Button>Schedule a Service</Button>
               </Link>
             </ul>
           </div>
