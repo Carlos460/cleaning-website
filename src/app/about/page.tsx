@@ -167,7 +167,7 @@ export default function About() {
             <div className="flex gap-10 justify-center">
               <AnimatePresence delay={0.02}>
                 <Link href={'/#contact'}>
-                  <Button>Schedule</Button>
+                  <Button>Schedule Service</Button>
                 </Link>
               </AnimatePresence>
               <AnimatePresence delay={0.04}>
