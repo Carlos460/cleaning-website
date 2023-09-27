@@ -21,7 +21,7 @@ export default function StatCard(props: IStatCard) {
             {props.number}
             {props.sign}
           </text>
-          <text className="text-base text-gray-500">{props.subtext}</text>
+          <text className="text-base text-gray-400">{props.subtext}</text>
         </div>
       </div>
     </div>

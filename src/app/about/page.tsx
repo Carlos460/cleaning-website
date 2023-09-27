@@ -152,7 +152,7 @@ export default function About() {
               <BodyText>
                 Sagittis nibh scelerisque vitae eget vulputate sem elementum sed
                 neque nisi felis non ultrices massa id egestas quam velit
-                pretium nu.
+                pretium nuss.
               </BodyText>
             </div>
           </AnimatePresence>
