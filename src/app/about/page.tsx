@@ -24,9 +24,10 @@ export default function About() {
             <div className="h-16 max-w-3xl m-auto text-center">
               <AnimatePresence>
                 <BodyText>
+                  {`
                   Experience unmatched laundry confidence with our guarantee: if you're not fully satisfied with the cleanliness and care of your clothes, 
                   we'll rewash them for free.
-
+                  `}
                 </BodyText>
               </AnimatePresence>
             </div>
@@ -96,11 +97,13 @@ export default function About() {
               <h2>MORE THAN 10 YEARS OF EXPERIENCE</h2>
               <div className="pt-4 pb-10">
                 <BodyText>
+                  {`
                   Welcome to our laundry services! We offer top-quality laundry services to ensure your clothes are clean, fresh and ready for wear. Our services 
                   include both wash and fold as well as dry cleaning for all types of garments, including delicate fabrics such as silk, wool and cashmere. Our team 
                   of expert cleaners are trained to handle all types of fabrics and stains, and use only the highest quality cleaning products to ensure that your 
                   clothes are not only clean, but also well-maintained. We take great care to follow any special instructions you may have, such as using certain 
                   detergents or fabric softeners, and we always handle your clothes with the utmost care and attention.
+                  `}
                 </BodyText>
               </div>
               <ul className="w-auto grid grid-cols-2 gap-y-6 font-semibold text-lg text-gray-800">
