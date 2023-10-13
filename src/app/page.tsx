@@ -1,13 +1,13 @@
-'use client';
-import Button from '@/components/Button';
-import ListContainer from '@/components/DetailList';
-import { BodyText, SubTitle, Title } from '@/components/Typography';
-import { InputField, SubmitButton, TextArea } from '@/components/Form';
-import StepCard from '@/widgets/StepCard';
-import ServiceCard from '@/widgets/ServiceCard';
-import Wrapper from '@/components/Wrapper';
-import Link from 'next/link';
-import AnimatePresence from '@/components/AnimatePresence';
+"use client";
+import Button from "@/components/Button";
+import ListContainer from "@/components/ListContainer";
+import { BodyText, SubTitle, Title } from "@/components/Typography";
+import { InputField, SubmitButton, TextArea } from "@/components/Form";
+import StepCard from "@/widgets/StepCard";
+import ServiceCard from "@/widgets/ServiceCard";
+import Wrapper from "@/components/Wrapper";
+import Link from "next/link";
+import AnimatePresence from "@/components/AnimatePresence";
 
 export default function Home() {
   return (
@@ -32,7 +32,12 @@ export default function Home() {
           </div>
           <div className="lg:flex-1 lg:px-10 lg:py-0 pt-10">
             <AnimatePresence delay={0.2}>
-              <div className="w-full h-96 bg-blue-300"></div>
+              <div className="w-full h-96 bg-blue-300 relative">
+                <img
+                  src="/laundry1.png"
+                  className=" w-full h-full object-cover"
+                />
+              </div>
             </AnimatePresence>
           </div>
         </header>
@@ -54,7 +59,7 @@ export default function Home() {
           <div className="flex lg:flex-row flex-col justify-center gap-10 py-16">
             <AnimatePresence delay={0.2}>
               <StepCard
-                imageSrc=""
+                imageSrc="/laptop.png"
                 alt=""
                 title="1. Schedule online"
                 description="Schedule a pick up date and time online or by call to have a driver collect your laundry"
@@ -62,7 +67,7 @@ export default function Home() {
             </AnimatePresence>
             <AnimatePresence delay={0.4}>
               <StepCard
-                imageSrc=""
+                imageSrc="/washdry.png"
                 alt=""
                 title="2. Wash & Dry"
                 description="Our staff will wash and dry your clothes using the best quality detergents."
@@ -70,7 +75,7 @@ export default function Home() {
             </AnimatePresence>
             <AnimatePresence delay={0.6}>
               <StepCard
-                imageSrc=""
+                imageSrc="/delivery.png"
                 alt=""
                 title="3. Delivery"
                 description="Laundry is folded and packed neatly ready to be deliver back to your door!"
@@ -106,7 +111,7 @@ export default function Home() {
           <div className="gap-10 pb-16 flex justify-center flex-wrap">
             <AnimatePresence delay={0.2}>
               <ServiceCard
-                imgSrc=""
+                imgSrc="/selfservice.png"
                 imgAlt=""
                 title="Self Service"
                 bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
@@ -114,7 +119,7 @@ export default function Home() {
             </AnimatePresence>
             <AnimatePresence delay={0.4}>
               <ServiceCard
-                imgSrc=""
+                imgSrc="/drycleaning3.png"
                 imgAlt=""
                 title="Dry Cleaning"
                 bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
@@ -122,7 +127,7 @@ export default function Home() {
             </AnimatePresence>
             <AnimatePresence delay={0.6}>
               <ServiceCard
-                imgSrc=""
+                imgSrc="/delivery2.png"
                 imgAlt=""
                 title="Pick up and Delivery"
                 bodyText="Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n."
@@ -137,7 +142,7 @@ export default function Home() {
         <section className="lg:py-20 pt-0 pb-10 flex lg:flex-row flex-col gap-10">
           <div className="lg:flex-1 lg:w-auto w-full lg:h-auto h-80 [&>div]:w-full [&>div]:h-full">
             <AnimatePresence delay={0.2}>
-              <div className="w-full h-full bg-blue-200 "></div>
+              <img src="/laundry3.png" className="w-full h-full object-cover" />
             </AnimatePresence>
           </div>
           <div className="flex lg:flex-1">
@@ -191,7 +196,10 @@ export default function Home() {
                   accumsan pellentesque lacus duis pharetra eutortor.
                 </BodyText>
                 <div className="flex py-10 mb-10 border-b">
-                  <div className=" rounded-full bg-blue-200 w-20 h-20"></div>
+                  <img
+                    src="/phoneringing.png"
+                    className="rounded-full w-20 h-20"
+                  />
                   <div className="ml-4 flex flex-col justify-center">
                     <p className="font-normal text-gray-500">CALL US NOW</p>
                     <p className="font-semibold text-3xl">(202)452-2932</p>

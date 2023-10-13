@@ -1,14 +1,14 @@
-import Wrapper from '@/components/Wrapper';
-import Button from '@/components/Button';
-import { BodyText, SubTitle, Title } from '@/components/Typography';
+import Wrapper from "@/components/Wrapper";
+import Button from "@/components/Button";
+import { BodyText, SubTitle, Title } from "@/components/Typography";
 
-import StatCard from '@/widgets/StatisticCard';
+import StatCard from "@/widgets/StatisticCard";
 
-import TeamCard from '@/widgets/TeamCard';
-import ListContainer from '@/components/DetailList';
-import ValueCard from '@/widgets/ValueCard';
-import AnimatePresence from '@/components/AnimatePresence';
-import Link from 'next/link';
+import TeamCard from "@/widgets/TeamCard";
+import ListContainer from "@/components/ListContainer";
+import ValueCard from "@/widgets/ValueCard";
+import AnimatePresence from "@/components/AnimatePresence";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -31,13 +31,14 @@ export default function About() {
                 </BodyText>
               </AnimatePresence>
             </div>
-
-
           </header>
 
           {/* Header Image Container */}
           <AnimatePresence>
-            <div className="bg-blue-300 mt-5 h-[700px]"></div>
+            <img
+              src="/laundry4.png"
+              className="rounded-tr-4 rounded-t-md object-cover bg-blue-300 mt-5 h-[700px] w-full"
+            />
           </AnimatePresence>
         </Wrapper>
       </section>
@@ -49,7 +50,7 @@ export default function About() {
           <div className="mb-4 md:mb-0">
             <AnimatePresence>
               <StatCard
-                icon="test"
+                icon="/dryingmachine.png"
                 number={20}
                 subtext="Drying Machines"
               />
@@ -57,13 +58,17 @@ export default function About() {
           </div>
           <div className="mb-4 md:mb-0">
             <AnimatePresence delay={0.1}>
-              <StatCard icon="test" number={21} subtext="Washing Machines" />
+              <StatCard
+                icon="/washingmachine.png"
+                number={21}
+                subtext="Washing Machines"
+              />
             </AnimatePresence>
           </div>
           <div className="mb-4 md:mb-0">
             <AnimatePresence delay={0.2}>
               <StatCard
-                icon="test"
+                icon="/drycleaning2.png"
                 number={10000}
                 sign="+"
                 subtext="Dry Cleaned Items"
@@ -72,7 +77,12 @@ export default function About() {
           </div>
           <div>
             <AnimatePresence delay={0.3}>
-              <StatCard icon="test" number={100} subtext="Happy Customers" sign="%"/>
+              <StatCard
+                icon="/happycustomer.png"
+                number={100}
+                subtext="Happy Customers"
+                sign="%"
+              />
             </AnimatePresence>
           </div>
         </div>
@@ -86,7 +96,10 @@ export default function About() {
           {/* Equipment Image Container */}
           <div className="flex-1">
             <AnimatePresence isFull={true}>
-              <div className="w-full lg:h-full h-96 bg-blue-300"></div>
+              <img
+                src="/laundry5.png"
+                className="w-full lg:h-full h-96 bg-blue-300"
+              />
             </AnimatePresence>
           </div>
 
@@ -127,20 +140,21 @@ export default function About() {
           </AnimatePresence>
           <AnimatePresence>
             <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-6">
-
               <ValueCard
+                image="/responsibility.png"
                 title="Responsibility"
                 body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
               />
               <ValueCard
+                image="/quality.png"
                 title="Quality"
                 body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
               />
               <ValueCard
+                image="/punctuality.png"
                 title="Puntuality"
                 body="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla"
               />
-
             </div>
           </AnimatePresence>
         </section>
@@ -169,12 +183,12 @@ export default function About() {
           <div>
             <div className="flex gap-10 justify-center">
               <AnimatePresence delay={0.02}>
-                <Link href={'/#contact'}>
+                <Link href={"/#contact"}>
                   <Button>Schedule Service</Button>
                 </Link>
               </AnimatePresence>
               <AnimatePresence delay={0.04}>
-                <Link href={'/services'}>
+                <Link href={"/services"}>
                   <Button theme="outlined">Explore Services</Button>
                 </Link>
               </AnimatePresence>

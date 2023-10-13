@@ -10,9 +10,8 @@ export default function StatCard(props: IStatCard) {
     <div className="grid-4-columns gap-8">
       <div className="flex flex-row text-start">
         {/* Icon Container */}
-        <div className="w-24 h-24 mr-4">
+        <div className="w-24 h-24 mr-3 object-cover scale-150">
           <img src={props.icon} alt="" />
-          <div className="min-w-full min-h-full bg-blue-300 rounded-full" />
         </div>
 
         {/* Text Container*/}

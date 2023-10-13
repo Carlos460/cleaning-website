@@ -31,7 +31,7 @@ export default function Services() {
             <AnimatePresence>
               <Link href="/#contact">
                 <PricingCard
-                  imageSrc=""
+                  imageSrc="/drycleaning.png"
                   alt=""
                   title="Pressing & Dry Cleaning"
                   pricing="$100 USD"
@@ -49,7 +49,7 @@ export default function Services() {
             <AnimatePresence delay={0.1}>
               <Link href="/#contact">
                 <PricingCard
-                  imageSrc=""
+                  imageSrc="/alterations.png"
                   alt=""
                   title="Alterations"
                   pricing="$149 USD"
@@ -67,7 +67,7 @@ export default function Services() {
             <AnimatePresence delay={0.2}>
               <Link href="/#contact">
                 <PricingCard
-                  imageSrc=""
+                  imageSrc="/specialrequest.png"
                   alt=""
                   title="Special Requests"
                   pricing="TBD"
@@ -91,23 +91,53 @@ export default function Services() {
           <div className="flex flex-col gap-5 mb-5 items-center">
             <ul className="flex gap-5">
               <AnimatePresence>
-                <li className="h-8 w-8 bg-blue-500"></li>
+                <li className="h-8 w-8">
+                  <img
+                    className=" w-full h-full object-cover"
+                    src="/star.png"
+                    alt=""
+                  />
+                </li>
               </AnimatePresence>
 
               <AnimatePresence delay={0.1}>
-                <li className="h-8 w-8 bg-blue-500"></li>
+                <li className="h-8 w-8">
+                  <img
+                    className=" w-full h-full object-cover"
+                    src="/star.png"
+                    alt=""
+                  />
+                </li>
               </AnimatePresence>
 
               <AnimatePresence delay={0.2}>
-                <li className="h-8 w-8 bg-blue-500"></li>
+                <li className="h-8 w-8">
+                  <img
+                    className=" w-full h-full object-cover"
+                    src="/star.png"
+                    alt=""
+                  />
+                </li>
               </AnimatePresence>
 
               <AnimatePresence delay={0.3}>
-                <li className="h-8 w-8 bg-blue-500"></li>
+                <li className="h-8 w-8">
+                  <img
+                    className=" w-full h-full object-cover"
+                    src="/star.png"
+                    alt=""
+                  />
+                </li>
               </AnimatePresence>
 
               <AnimatePresence delay={0.4}>
-                <li className="h-8 w-8 bg-blue-500"></li>
+                <li className="h-8 w-8">
+                  <img
+                    className=" w-full h-full object-cover"
+                    src="/star.png"
+                    alt=""
+                  />
+                </li>
               </AnimatePresence>
             </ul>
 
