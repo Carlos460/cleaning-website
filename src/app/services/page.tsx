@@ -150,6 +150,7 @@ export default function Services() {
           <div className="flex lg:flex-row flex-col gap-10">
             <AnimatePresence>
               <ReviewCard
+                image="/person2.png"
                 quote="“Great service! Laundry was returned clean, nicely folded, and according to my requests. On time and friendly delivery. Highly recommended!”"
                 name="Yael Yisraeli"
                 location="Service"
@@ -158,6 +159,7 @@ export default function Services() {
 
             <AnimatePresence>
               <ReviewCard
+                image="/person1.png"
                 quote="“Great place to get dry cleaning done. Staff is kind and respectful. Been with them for years...had our home drier break once for months. we didn't have issues with drying our washed clothing there.”"
                 name="Samar k Said"
                 location="Atmopshere"

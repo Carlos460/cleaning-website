@@ -1,9 +1,9 @@
-import { InputField, SubmitButton, TextArea } from '@/components/Form';
-import { BodyText, SubTitle, Title } from '@/components/Typography';
-import Wrapper from '@/components/Wrapper';
-import ReachCard from '@/widgets/ReachCard';
-import DropDownInfo from '@/components/DropDownInfo';
-import AnimatePresence from '@/components/AnimatePresence';
+import { InputField, SubmitButton, TextArea } from "@/components/Form";
+import { BodyText, SubTitle, Title } from "@/components/Typography";
+import Wrapper from "@/components/Wrapper";
+import ReachCard from "@/widgets/ReachCard";
+import DropDownInfo from "@/components/DropDownInfo";
+import AnimatePresence from "@/components/AnimatePresence";
 
 export default function Contact() {
   return (
@@ -18,7 +18,10 @@ export default function Contact() {
                 Lorem ipsum dolor sit amet consectetur adipiscing elit nulla
                 adipiscing tincidunt interdum tellus du.
               </BodyText>
-              <div className="w-full h-80 bg-blue-400 mt-10"></div>
+              <img
+                src="/touch.png"
+                className="border-solid rounded-md w-full h-80 mt-10"
+              />
             </div>
           </AnimatePresence>
           <AnimatePresence delay={0.1}>
@@ -61,6 +64,7 @@ export default function Contact() {
           <div className="flex lg:flex-row flex-col lg:gap-10 gap-20 pt-20">
             <AnimatePresence>
               <ReachCard
+                image="/emailus.png"
                 title="Email us"
                 bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
                 infoText="contact@cleaning.com"
@@ -69,6 +73,7 @@ export default function Contact() {
 
             <AnimatePresence delay={0.1}>
               <ReachCard
+                image="/phoneringing.png"
                 title="Talk with us"
                 bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
                 infoText="(414)567-2109"
@@ -77,6 +82,7 @@ export default function Contact() {
 
             <AnimatePresence delay={0.2}>
               <ReachCard
+                image="/livechat.png"
                 title="Live Chat"
                 bodyText="Lorem ipsum dolor sit amet consectetur adipiscing elit nulla adipiscing tincid"
                 infoText="Start Chat"

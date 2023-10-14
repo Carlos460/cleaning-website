@@ -4,6 +4,7 @@ interface IReviewCard {
   quote: string;
   name: string;
   location: string;
+  image: string;
 }
 
 export default function ReviewCard(props: IReviewCard) {
@@ -13,7 +14,10 @@ export default function ReviewCard(props: IReviewCard) {
         {props.quote}
       </h1>
       <div className="mx-auto flex gap-3">
-        <div className="bg-blue-500 h-14 w-14 rounded-full"></div>
+        <img
+          src={props.image}
+          className={`object-cover h-14 w-14 rounded-full `}
+        />
         <div>
           <h3 className="font-bold text-lg">{props.name}</h3>
           <BodyText>{props.location}</BodyText>

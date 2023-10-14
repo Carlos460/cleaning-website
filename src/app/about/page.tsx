@@ -175,9 +175,21 @@ export default function About() {
           </AnimatePresence>
           <AnimatePresence>
             <div className="gap-10 py-16 flex justify-center flex-wrap">
-              <TeamCard name="Philip Camu" jobTitle="LAUNDROMAT EXPERT " />
-              <TeamCard name="Philip Camu" jobTitle="LAUNDROMAT EXPERT " />
-              <TeamCard name="Philip Camu" jobTitle="LAUNDROMAT EXPERT " />
+              <TeamCard
+                image="/cat1.png"
+                name="Philip Camu"
+                jobTitle="LAUNDROMAT EXPERT "
+              />
+              <TeamCard
+                image="/cat2.png"
+                name="Philip Camu"
+                jobTitle="LAUNDROMAT EXPERT "
+              />
+              <TeamCard
+                image="cat3.png"
+                name="Philip Camu"
+                jobTitle="LAUNDROMAT EXPERT "
+              />
             </div>
           </AnimatePresence>
           <div>
