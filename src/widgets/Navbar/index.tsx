@@ -5,13 +5,14 @@ import Button from '@/components/Button';
 import NavLink from './NavLink';
 import Wrapper from '@/components/Wrapper';
 import { useState } from 'react';
-import useScrollDirection from '@/hooks/useScrollDirection';
+import useScrollPosition from '@/hooks/useScrollPosition';
 import { motion } from 'framer-motion';
 
 export default function Navbar() {
   const [activeHamburger, setActiveHamburger] = useState(false);
   const [hoverHamburger, setHoverHamburger] = useState(false);
-  const [isScrollDirectionDown, resetScrollDirection] = useScrollDirection();
+  const [isScrollDirectionDown, resetScrollDirection, scrollPosition] = useScrollPosition();
+  const navThreshold = 75;
 
   return (
     <motion.div
@@ -22,7 +23,7 @@ export default function Navbar() {
     >
       <nav
         className={`bg-white w-full shadow fixed transition-all ${
-          isScrollDirectionDown && !activeHamburger ? '-translate-y-20' : null
+          isScrollDirectionDown && !activeHamburger && (scrollPosition > navThreshold) ? '-translate-y-20' : null
         }`}
       >
         <Wrapper>
